@@ -1,14 +1,19 @@
-import Nok from "./NOK.png";
 import "./IndividualWorkTheory.css";
+import getIndividualWork from "./individualWorks.jsx";
 
 import Header from "../Header/Header";
+import { useParams } from "react-router-dom";
 
 function IndividualWorkTheory() {
+
+  let params = useParams();
+  let workData = getIndividualWork(params.id);
+
   return (
     <div className="IndividualWorkTheory">
       <h1>
         <p align="center">
-          Самостоятельная работа по теме нахождение наименьшего общего кратного
+          {workData.theme}
         </p>
       </h1>
 	  
@@ -16,7 +21,7 @@ function IndividualWorkTheory() {
 
       <table border="1" className="margin-25" bgcolor="#FFFFFF">
         <th align="left">
-          <img src={Nok} />
+          <img src={workData.image} />
         </th>
       </table>
     </div>
