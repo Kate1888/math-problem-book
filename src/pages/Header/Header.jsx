@@ -1,16 +1,18 @@
-import { Link } from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import "./Header.css";
-import MainPage from "../MainPage/MainPage";
-import IndividualWorkTheory from "../IndividualWorkTheory/IndividualWorkTheory";
-import IndividualWorkTest from "../IndividualWorkTest/IndividualWorkTest";
 
 function Header() {
+    let params = useParams();
+
+    let theoryLink = '/individual-work/' + params.id;
+    let testLink = '/individual-work/' + params.id + '/test';
+
   return (
     <div className="Header">
-      <Link to={MainPage}>&#8592; Оглавление</Link>
+      <Link to="/">&#8592; Оглавление</Link>
       <div className="links">
-        <Link to={IndividualWorkTheory}>Теория</Link>
-        <Link to={IndividualWorkTest}>Тренажер</Link>
+        <Link to={theoryLink}>Теория</Link>
+        <Link to={testLink}>Тренажер</Link>
       </div>
     </div>
   );
