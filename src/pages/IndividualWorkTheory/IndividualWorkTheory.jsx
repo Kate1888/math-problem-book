@@ -1,5 +1,5 @@
 import "./IndividualWorkTheory.css";
-import getIndividualWork from "./individualWorks.jsx";
+import getIndividualWork from "../../individualWorksData/individualWorks";
 
 import Header from "../Header/Header";
 import { useParams } from "react-router-dom";
@@ -21,7 +21,7 @@ function IndividualWorkTheory() {
 
       <table border="1" className="margin-25" bgcolor="#FFFFFF">
         <th align="left">
-          <img src={workData.image} />
+          <img src={workData.theoryImage} />
         </th>
       </table>
     </div>
