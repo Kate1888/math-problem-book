@@ -21,7 +21,7 @@ function IndividualWorkTheory() {
 
       <table border="1" className="margin-25" bgcolor="#FFFFFF">
         <th align="left">
-          <img src={workData.image} />
+          <img src={workData.theoryImage} />
         </th>
       </table>
     </div>
