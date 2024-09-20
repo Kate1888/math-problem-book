@@ -1,10 +1,11 @@
+import Image1 from "./theoryImages/image1.png";
 import Image6 from "./theoryImages/image6.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
         1: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме действия с натуральними числами',
+            theoryImage: Image1
         },
         2: {
             theme: 'Самостоятельная работа ',
