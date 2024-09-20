@@ -135,6 +135,84 @@ export default function getIndividualWorkQuestions(workNumber) {
                 ],
             }
         ],
+        2: [
+            {
+                order: 1,
+                text: 'Выберите числовое выражения.',
+                image: null,
+                answers: [
+                    {
+                        text: ' 546 + 86 + 67a',
+                        isRight: false,
+                    },
+                    {
+                        text: ' 56a - 67b',
+                        isRight: false,
+                    },
+                    {
+                        text: ' 67 - 11 + 655',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Выберите буквенное выражение.',
+                image: null,
+                answers: [
+                    {
+                        text: ' 45 : 5 + 89',
+                        isRight: false,
+                    },
+                    {
+                        text: '56a + 67b - 89',
+                        isRight: true,
+                    },
+                    {
+                        text: '67 + 56',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Найдите значение выражения y : 27 + 33, если y = 729, выберите верный ответ.',
+                image: null,
+                answers: [
+                    {
+                        text: '60',
+                        isRight: true,
+                    },
+                    {
+                        text: '53',
+                        isRight: false,
+                    },
+                    {
+                        text: '65',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Найдите корень уравнения (3x + 5) : 8 = 13.',
+                image: null,
+                answers: [
+                    {
+                        text: '36',
+                        isRight: false,
+                    },
+                    {
+                        text: '33',
+                        isRight: true,
+                    },
+                    {
+                        text: '2',
+                        isRight: false,
+                    }
+                ],
+            }
+        ],
         6: [
             {
                 order: 1,

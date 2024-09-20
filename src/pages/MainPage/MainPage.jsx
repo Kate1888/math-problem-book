@@ -10,7 +10,7 @@ function MainPage() {
 			<ol className='margin-class'>
 				<font size="3">
 					<li><Link to="individual-work/1"><h3>По теме действия с натуральными числами</h3></Link></li>
-					<li><Link to="2с.р/page2.html"><h3>По теме числовые и буквенные выражения</h3></Link></li>
+					<li><Link to="individual-work/2"><h3>По теме числовые и буквенные выражения</h3></Link></li>
 					<li><Link to="3с.р/page3.html"><h3>По теме признаки делимости натуральных чисел</h3></Link></li>
 					<li><Link to="4с.р/page4.html"><h3>По теме простые и составные числа</h3></Link></li>
 					<li><Link to="5с.р/page5.html"><h3>По теме нахождение наибольшего общего делителя</h3></Link></li>
