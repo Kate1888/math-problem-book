@@ -213,6 +213,162 @@ export default function getIndividualWorkQuestions(workNumber) {
                 ],
             }
         ],
+        3: [
+            {
+                order: 1,
+                text: 'Какое число делиться на 3',
+                image: null,
+                answers: [
+                    {
+                        text: '13299',
+                        isRight: true,
+                    },
+                    {
+                        text: '7569',
+                        isRight: false,
+                    },
+                    {
+                        text: '419',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'На какую цифру делиться число 76486 нацело.',
+                image: null,
+                answers: [
+                    {
+                        text: '3',
+                        isRight: false,
+                    },
+                    {
+                        text: '2',
+                        isRight: true,
+                    },
+                    {
+                        text: '9',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Какую цифру нужно поставить вместо * чтобы чтсло 54*54 делилось на 9',
+                image: null,
+                answers: [
+                    {
+                        text: '2',
+                        isRight: false,
+                    },
+                    {
+                        text: '6',
+                        isRight: false,
+                    },
+                    {
+                        text: '9',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Какое число делиться на 10',
+                image: null,
+                answers: [
+                    {
+                        text: '43500',
+                        isRight: true,
+                    },
+                    {
+                        text: '5454',
+                        isRight: false,
+                    },
+                    {
+                        text: '1232',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 5,
+                text: 'На какую цифру делиться число 545735',
+                image: null,
+                answers: [
+                    {
+                        text: '9',
+                        isRight: false,
+                    },
+                    {
+                        text: '5',
+                        isRight: true,
+                    },
+                    {
+                        text: '2',
+                        isRight: false,
+                    }
+                ],
+            }
+        ],
+        4: [
+            {
+                order: 1,
+                text: 'Разложите число 800 на простые множители',
+                image: null,
+                answers: [
+                    {
+                        text: '2×2×2×5×5',
+                        isRight: false,
+                    },
+                    {
+                        text: '2×2×2×2×2×5×5;',
+                        isRight: true,
+                    },
+                    {
+                        text: '8×2×2×5×5;',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Разложите число 360 на простые множители',
+                image: null,
+                answers: [
+                    {
+                        text: ' 2<sup>2</sup> &#215; 3<sup>3</sup> &#215; 5',
+                        isRight: false,
+                    },
+                    {
+                        text: '2<sup>3</sup> &#215; 3<sup>2</sup> &#215; 5',
+                        isRight: true,
+                    },
+                    {
+                        text: '4<sup>4</sup> &#215; 3<sup>2</sup> &#215; 5',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Число разложите на простые множители и получили 2<sup>4</sup> &#215; 3 &#215; 5<sup>2</sup>  , какое число раздожили?',
+                image: null,
+                answers: [
+                    {
+                        text: '1200',
+                        isRight: true,
+                    },
+                    {
+                        text: '240',
+                        isRight: false,
+                    },
+                    {
+                        text: '60',
+                        isRight: false,
+                    }
+                ],
+            }
+        ],
         6: [
             {
                 order: 1,

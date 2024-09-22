@@ -1,5 +1,7 @@
 import Image1 from "./theoryImages/image1.png";
 import Image2 from "./theoryImages/image2.png";
+import Image3 from "./theoryImages/image4.png";
+import Image4 from "./theoryImages/image4.png";
 import Image6 from "./theoryImages/image6.png";
 
 export default function getIndividualWork(workNumber) {
@@ -9,16 +11,16 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image1
         },
         2: {
-            theme: 'Самостоятельная работа по теме числовые и бувкенные выражения ',
+            theme: 'Самостоятельная работа по теме числовые и бувкенные выражения',
             theoryImage: Image2
         },
         3: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме признаки делимости натуральных чисел',
+            theoryImage: Image3
         },
         4: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме простые и составные числа',
+            theoryImage: Image4
         },
         5: {
             theme: 'Самостоятельная работа ',
