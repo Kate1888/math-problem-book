@@ -5,6 +5,7 @@ import Image4 from "./theoryImages/image4.png";
 import Image5 from "./theoryImages/image5.png";
 import Image6 from "./theoryImages/image6.png";
 import Image7 from "./theoryImages/image7.png";
+import Image8 from "./theoryImages/image8.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -37,8 +38,8 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image7
         },
         8: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме окружность и многогранники',
+            theoryImage: Image8
         },
         9: {
             theme: 'Самостоятельная работа ',

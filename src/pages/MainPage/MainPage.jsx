@@ -16,7 +16,7 @@ function MainPage() {
 					<li><Link to="individual-work/5"><h3>По теме нахождение наибольшего общего делителя</h3></Link></li>
 					<li><Link to="individual-work/6"><h3>По теме нахождение наименьшего общего кратного</h3></Link></li>
 					<li><Link to="individual-work/7"><h3>По теме многоугольники</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме окружность, круг и многогранники</h3></Link></li>
+					<li><Link to="individual-work/8"><h3>По теме окружность, круг и многогранники</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме обыкновенные дроби</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме десятичные дроби</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме преобразование обыкновенной дроби в десятичную, десятичное приближение обыкновенной дроби</h3></Link></li>

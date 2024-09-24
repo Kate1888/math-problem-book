@@ -1,6 +1,9 @@
 import image7_1 from "./questionImages/image7_1.png";
 import image7_2 from "./questionImages/image7_2.png";
 import image7_3 from "./questionImages/image7_3.png";
+import image8_1 from "./questionImages/image8_1.png";
+import image8_2 from "./questionImages/image8_2.png";
+import image8_4 from "./questionImages/image8_4.png";
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
@@ -563,6 +566,84 @@ export default function getIndividualWorkQuestions(workNumber) {
                     },
                     {
                         text: '101',
+                        isRight: true,
+                    }
+                ],
+            }
+        ],
+        8: [
+            {
+                order: 1,
+                text: 'Отрезок DE, является',
+                image: image8_1,
+                answers: [
+                    {
+                        text: 'диаметром',
+                        isRight: false,
+                    },
+                    {
+                        text: 'хордой',
+                        isRight: true,
+                    },
+                    {
+                        text: 'радиусом',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Как называется данная пирамида',
+                image: image8_2,
+                answers: [
+                    {
+                        text: 'пятиугольная',
+                        isRight:  false,
+                    },
+                    {
+                        text: 'семиугольная',
+                        isRight: false,
+                    },
+                    {
+                        text: 'шестиугольная',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Найдите объём куба со стороной 6',
+                image: null,
+                answers: [
+                    {
+                        text: '18',
+                        isRight: false,
+                    },
+                    {
+                        text: '216',
+                        isRight: true,
+                    },
+                    {
+                        text: '42',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Найдите грань равную грани ABCD',
+                image: image8_4,
+                answers: [
+                    {
+                        text: 'CC1D1D',
+                        isRight: false,
+                    },
+                    {
+                        text: 'AA1B1B',
+                        isRight: false,
+                    },
+                    {
+                        text: 'A1B1C1D1',
                         isRight: true,
                     }
                 ],
