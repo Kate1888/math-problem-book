@@ -2,7 +2,9 @@ import Image1 from "./theoryImages/image1.png";
 import Image2 from "./theoryImages/image2.png";
 import Image3 from "./theoryImages/image4.png";
 import Image4 from "./theoryImages/image4.png";
+import Image5 from "./theoryImages/image5.png";
 import Image6 from "./theoryImages/image6.png";
+import Image7 from "./theoryImages/image7.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -23,16 +25,16 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image4
         },
         5: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме нахождение наибольшего общего делителя',
+            theoryImage: Image5
         },
         6: {
             theme: 'Самостоятельная работа по теме нахождение наименьшего общего кратного',
             theoryImage: Image6
         },
         7: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме многоугольники',
+            theoryImage: Image7
         },
         8: {
             theme: 'Самостоятельная работа ',

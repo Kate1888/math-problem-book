@@ -1,3 +1,6 @@
+import image7_1 from "./questionImages/image7_1.png";
+import image7_2 from "./questionImages/image7_2.png";
+import image7_3 from "./questionImages/image7_3.png";
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
@@ -369,6 +372,65 @@ export default function getIndividualWorkQuestions(workNumber) {
                 ],
             }
         ],
+        5: [
+            {
+                order: 1,
+                text: ' Найдите НОД чисел 360 и 252',
+                image: null,
+                answers: [
+                    {
+                        text: '38',
+                        isRight: false,
+                    },
+                    {
+                        text: '36',
+                        isRight: true,
+                    },
+                    {
+                        text: '35',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Найдите НОД чисел a = 2<sup>3</sup> &#215; 3 <sup>2</sup> &#215; 5 &#215; 7<sup>2</sup> и b = 2<sup>5</sup> &#215; 3 <sup>4</sup> &#215; 5 <sup>2</sup> &#215; 7.',
+                image: null,
+                answers: [
+                    {
+                        text: ' 2555',
+                        isRight: false,
+                    },
+                    {
+                        text: '2530',
+                        isRight: false,
+                    },
+                    {
+                        text: '2520',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Найдите НОД(1800;1500;420).',
+                image: null,
+                answers: [
+                    {
+                        text: '300',
+                        isRight: true,
+                    },
+                    {
+                        text: '6',
+                        isRight: false,
+                    },
+                    {
+                        text: '3',
+                        isRight: false,
+                    }
+                ],
+            }
+        ],
         6: [
             {
                 order: 1,
@@ -424,6 +486,84 @@ export default function getIndividualWorkQuestions(workNumber) {
                     {
                         text: '41400',
                         isRight: false,
+                    }
+                ],
+            }
+        ],
+        7: [
+            {
+                order: 1,
+                text: 'Выберите вид труегольника',
+                image: image7_1,
+                answers: [
+                    {
+                        text: 'остроугольный',
+                        isRight: false,
+                    },
+                    {
+                        text: 'прямоугольный',
+                        isRight: false,
+                    },
+                    {
+                        text: 'тупоугольный',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Найдите площадь квадрата со стороной 16',
+                image: null,
+                answers: [
+                    {
+                        text: '256',
+                        isRight: true ,
+                    },
+                    {
+                        text: '32',
+                        isRight: false,
+                    },
+                    {
+                        text: '64',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Найдите угол ABD',
+                image: image7_2,
+                answers: [
+                    {
+                        text: '21',
+                        isRight: false,
+                    },
+                    {
+                        text: '55',
+                        isRight: true,
+                    },
+                    {
+                        text: '115',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Найдите периметр',
+                image: image7_3,
+                answers: [
+                    {
+                        text: '96',
+                        isRight: false,
+                    },
+                    {
+                        text: '100',
+                        isRight: false,
+                    },
+                    {
+                        text: '101',
+                        isRight: true,
                     }
                 ],
             }

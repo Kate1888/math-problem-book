@@ -13,9 +13,9 @@ function MainPage() {
 					<li><Link to="individual-work/2"><h3>По теме числовые и буквенные выражения</h3></Link></li>
 					<li><Link to="individual-work/3"><h3>По теме признаки делимости натуральных чисел</h3></Link></li>
 					<li><Link to="individual-work/4"><h3>По теме простые и составные числа</h3></Link></li>
-					<li><Link to="5с.р/page5.html"><h3>По теме нахождение наибольшего общего делителя</h3></Link></li>
+					<li><Link to="individual-work/5"><h3>По теме нахождение наибольшего общего делителя</h3></Link></li>
 					<li><Link to="individual-work/6"><h3>По теме нахождение наименьшего общего кратного</h3></Link></li>
-					<li><Link to="7с.р/page7.html"><h3>По теме многоугольники</h3></Link></li>
+					<li><Link to="individual-work/7"><h3>По теме многоугольники</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме окружность, круг и многогранники</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме обыкновенные дроби</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме десятичные дроби</h3></Link></li>
