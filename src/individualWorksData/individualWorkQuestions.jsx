@@ -4,6 +4,9 @@ import image7_3 from "./questionImages/image7_3.png";
 import image8_1 from "./questionImages/image8_1.png";
 import image8_2 from "./questionImages/image8_2.png";
 import image8_4 from "./questionImages/image8_4.png";
+import image9_1 from "./questionImages/image9_1.png";
+import image9_2 from "./questionImages/image9_2.png";
+import image9_3 from "./questionImages/image9_3.png";
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
@@ -648,6 +651,181 @@ export default function getIndividualWorkQuestions(workNumber) {
                     }
                 ],
             }
+        ],
+        9: [
+            {
+                order: 1,
+                text: 'Какие являются дроби',
+                image: image9_1,
+                answers: [
+                    {
+                        text: 'неправильными',
+                        isRight: false,
+                    },
+                    {
+                        text: 'правильными',
+                        isRight: true,
+                    },
+                    {
+                        text: 'смешанными',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Решите пример',
+                image: image9_2,
+                answers: [
+                    {
+                        text: '3',
+                        isRight:  false,
+                    },
+                    {
+                        text: '15',
+                        isRight: true,
+                    },
+                    {
+                        text: '12',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Решите пример',
+                image: image9_3,
+                answers: [
+                    {
+                        text: '9',
+                        isRight: false,
+                    },
+                    {
+                        text: '7',
+                        isRight: true,
+                    },
+                    {
+                        text: '12',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Найдите 4/5 от числа 120',
+                image: null,
+                answers: [
+                    {
+                        text: '32',
+                        isRight: true,
+                    },
+                    {
+                        text: '150',
+                        isRight: false,
+                    },
+                    {
+                        text: '8',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Найдите число, 4/13 которого равно 13',
+                image: null,
+                answers: [
+                    {
+                        text: '104',
+                        isRight: false,
+                    },
+                    {
+                        text: '5',
+                        isRight: false,
+                    },
+                    {
+                        text: '52',
+                        isRight: true,
+                    }
+                ],
+            }
+        ],
+        10: [
+            {
+                order: 1,
+                text: 'Какой знак нужно поставить между числами 65,5664 и 65,5604',
+                image: null,
+                answers: [
+                    {
+                        text: '>',
+                        isRight: true,
+                    },
+                    {
+                        text: '<',
+                        isRight: false,
+                    },
+                    {
+                        text: '=',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Выберите правильное округление до сотых числа 77,8754',
+                image: null,
+                answers: [
+                    {
+                        text: '77,875',
+                        isRight:  false,
+                    },
+                    {
+                        text: '77,88',
+                        isRight: true,
+                    },
+                    {
+                        text: '77,87',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Решите пример (5,4 + 2,3) х 2,1 : 0,3',
+                image: null,
+                answers: [
+                    {
+                        text: '21,5',
+                        isRight: false,
+                    },
+                    {
+                        text: '53,9',
+                        isRight: true,
+                    },
+                    {
+                        text: '53,09',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Решите пример 12,4 х 1,6 + 1,2 х 2,3 - 5,1',
+                image: null,
+                answers: [
+                    {
+                        text: '17,5',
+                        isRight: true,
+                    },
+                    {
+                        text: '43,292',
+                        isRight: false,
+                    },
+                    {
+                        text: '28,856',
+                        isRight: false,
+                    }
+                ],
+            },
         ],
     };
 

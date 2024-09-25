@@ -6,6 +6,8 @@ import Image5 from "./theoryImages/image5.png";
 import Image6 from "./theoryImages/image6.png";
 import Image7 from "./theoryImages/image7.png";
 import Image8 from "./theoryImages/image8.png";
+import Image9 from "./theoryImages/image9.png";
+import Image10 from "./theoryImages/image10.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -42,12 +44,12 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image8
         },
         9: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме обыкновенные дроби',
+            theoryImage: Image9
         },
         10: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме десятичные дроби',
+            theoryImage: Image10
         },
         11: {
             theme: 'Самостоятельная работа ',
