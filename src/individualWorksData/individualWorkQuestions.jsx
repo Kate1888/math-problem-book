@@ -827,6 +827,143 @@ export default function getIndividualWorkQuestions(workNumber) {
                 ],
             },
         ],
+        11: [
+            {
+                order: 1,
+                text: 'Преобразуйте в десятичную дробь 27/50',
+                image: null,
+                answers: [
+                    {
+                        text: '0,054',
+                        isRight: false,
+                    },
+                    {
+                        text: '0,54',
+                        isRight: true,
+                    },
+                    {
+                        text: '5,4',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Найдите десятичное приближение дроби 14/75 до сотых',
+                image: null,
+                answers: [
+                    {
+                        text: '0,19',
+                        isRight:  true,
+                    },
+                    {
+                        text: '0,18',
+                        isRight: false,
+                    },
+                    {
+                        text: '0,187',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Преобразуйте в десятичную дробь 62/25',
+                image: null,
+                answers: [
+                    {
+                        text: '2,5',
+                        isRight: false,
+                    },
+                    {
+                        text: '2,48',
+                        isRight: true,
+                    },
+                    {
+                        text: '2,05',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Найдите десятичное приближение дроби 37/41 до тысячных',
+                image: null,
+                answers: [
+                    {
+                        text: '0,912',
+                        isRight: false,
+                    },
+                    {
+                        text: '0,902',
+                        isRight: true,
+                    },
+                    {
+                        text: '0,903',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
+        12: [
+            {
+                order: 1,
+                text: 'Найдите среднее арифметическое чисел: 4,5; 2,1 и 2,4',
+                image: null,
+                answers: [
+                    {
+                        text: '5',
+                        isRight: false,
+                    },
+                    {
+                        text: '2',
+                        isRight: false,
+                    },
+                    {
+                        text: '3',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Среднее арифметическое чисел 12,4 и х равно 7,6. Найдите х',
+                image: null,
+                answers: [
+                    {
+                        text: '2,8',
+                        isRight:  true,
+                    },
+                    {
+                        text: '8,6',
+                        isRight: false,
+                    },
+                    {
+                        text: '3',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'В течении пяти дней в 10 ч утра Марина выписывала количество выпадения осадков. Она получила такие результаты: 30м; 12м; 3м; 10м; 11м. Найдите среднее значение проведённых измерений.   ',
+                image: null,
+                answers: [
+                    {
+                        text: '13,5',
+                        isRight: false,
+                    },
+                    {
+                        text: '13,2',
+                        isRight: true,
+                    },
+                    {
+                        text: '13,1',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
     };
 
     return questionsByWork[workNumber];

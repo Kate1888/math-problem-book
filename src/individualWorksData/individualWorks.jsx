@@ -8,6 +8,8 @@ import Image7 from "./theoryImages/image7.png";
 import Image8 from "./theoryImages/image8.png";
 import Image9 from "./theoryImages/image9.png";
 import Image10 from "./theoryImages/image10.png";
+import Image11 from "./theoryImages/image11.png";
+import Image12 from "./theoryImages/image12.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -52,12 +54,12 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image10
         },
         11: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме преобразование обыкновенной дроби в десятичную, десятичное приближение обыкновенной дроби',
+            theoryImage: Image11
         },
         12: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме среднее арифметическое, среднее значение величин',
+            theoryImage: Image12
         },
         13: {
             theme: 'Самостоятельная работа ',
