@@ -21,8 +21,8 @@ function MainPage() {
 					<li><Link to="individual-work/10"><h3>По теме десятичные дроби</h3></Link></li>
 					<li><Link to="individual-work/11"><h3>По теме преобразование обыкновенной дроби в десятичную, десятичное приближение обыкновенной дроби</h3></Link></li>
 					<li><Link to="individual-work/12"><h3>По теме среднее арифметическое, среднее значение величин</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме проценты, нахождение процентов от числа</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме нахождение числа по его процентам</h3></Link></li>
+					<li><Link to="individual-work/13"><h3>По теме проценты, нахождение процентов от числа</h3></Link></li>
+					<li><Link to="individual-work/14"><h3>По теме нахождение числа по его процентам</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме отношение</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме пропорции</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме процентное отношение двух чисел</h3></Link></li>

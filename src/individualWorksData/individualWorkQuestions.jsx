@@ -7,6 +7,7 @@ import image8_4 from "./questionImages/image8_4.png";
 import image9_1 from "./questionImages/image9_1.png";
 import image9_2 from "./questionImages/image9_2.png";
 import image9_3 from "./questionImages/image9_3.png";
+import image13_4 from "./questionImages/image13_4.png";
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
@@ -959,6 +960,143 @@ export default function getIndividualWorkQuestions(workNumber) {
                     },
                     {
                         text: '13,1',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
+        13: [
+            {
+                order: 1,
+                text: 'Представьте в виде десятичной дроби 8%',
+                image: null,
+                answers: [
+                    {
+                        text: '0,08',
+                        isRight: true,
+                    },
+                    {
+                        text: '0,8',
+                        isRight: false,
+                    },
+                    {
+                        text: '8',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Представьте в виде процентов 0,76',
+                image: null,
+                answers: [
+                    {
+                        text: '7,6%',
+                        isRight: false,
+                    },
+                    {
+                        text: '76%',
+                        isRight: true,
+                    },
+                    {
+                        text: '0,0076%',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Найдите 7% от числа 8',
+                image: null,
+                answers: [
+                    {
+                        text: '0,56',
+                        isRight: true,
+                    },
+                    {
+                        text: '56',
+                        isRight: false,
+                    },
+                    {
+                        text: '0,056',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Найдите сколько процентов площади квадрата закрашено',
+                image: image13_4,
+                answers: [
+                    {
+                        text: '36%',
+                        isRight: true,
+                    },
+                    {
+                        text: '30%',
+                        isRight: false,
+                    },
+                    {
+                        text: '3%',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
+        14: [
+            {
+                order: 1,
+                text: 'Найдите число, 10% которого равны 56',
+                image: null,
+                answers: [
+                    {
+                        text: '5,6',
+                        isRight: false,
+                    },
+                    {
+                        text: '560',
+                        isRight: true,
+                    },
+                    {
+                        text: '0,56',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Найдите число, 16% которого равны 40',
+                image: null,
+                answers: [
+                    {
+                        text: '250',
+                        isRight: true,
+                    },
+                    {
+                        text: '6,4',
+                        isRight: false,
+                    },
+                    {
+                        text: '300',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Найдите число, 12% которого равны 36',
+                image: null,
+                answers: [
+                    {
+                        text: '300',
+                        isRight: true,
+                    },
+                    {
+                        text: '354',
+                        isRight: false,
+                    },
+                    {
+                        text: '43,2',
                         isRight: false,
                     }
                 ],

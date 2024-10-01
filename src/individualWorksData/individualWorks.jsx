@@ -10,6 +10,8 @@ import Image9 from "./theoryImages/image9.png";
 import Image10 from "./theoryImages/image10.png";
 import Image11 from "./theoryImages/image11.png";
 import Image12 from "./theoryImages/image12.png";
+import Image13 from "./theoryImages/image13.png";
+import Image14 from "./theoryImages/image14.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -62,12 +64,12 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image12
         },
         13: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме проценты, нахождение процентов от числа',
+            theoryImage: Image13
         },
         14: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме нахождение числа по его процентам',
+            theoryImage: Image14
         },
         15: {
             theme: 'Самостоятельная работа ',
