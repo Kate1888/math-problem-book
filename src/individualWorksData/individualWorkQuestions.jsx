@@ -1102,6 +1102,143 @@ export default function getIndividualWorkQuestions(workNumber) {
                 ],
             },
         ],
+        15: [
+            {
+                order: 1,
+                text: 'Чему равно отношение числа 36 к 6',
+                image: null,
+                answers: [
+                    {
+                        text: '6',
+                        isRight: true,
+                    },
+                    {
+                        text: '1/6',
+                        isRight: false,
+                    },
+                    {
+                        text: '216',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Найдите отношение 5дм : 5см',
+                image: null,
+                answers: [
+                    {
+                        text: '10',
+                        isRight: true,
+                    },
+                    {
+                        text: '1',
+                        isRight: false,
+                    },
+                    {
+                        text: '0,1',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Что показывает отношение чисел a и b',
+                image: null,
+                answers: [
+                    {
+                        text: 'показывает, во сколько раз число b больше числа a',
+                        isRight: false,
+                    },
+                    {
+                        text: 'покузывает какую часть число b составляет от числа a',
+                        isRight: false,
+                    },
+                    {
+                        text: 'покузывает какую часть число a составляет от числа b',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Расстояние на карте между двумя городами равно 6,9см. Какое расстояние между этими городами на местности, если масштаб карты равен 1 : 600000',
+                image: null,
+                answers: [
+                    {
+                        text: '41400км',
+                        isRight: false,
+                    },
+                    {
+                        text: '414км',
+                        isRight: true,
+                    },
+                    {
+                        text: '40000км',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
+        16: [
+            {
+                order: 1,
+                text: 'Выберите крайние члены пропорции 45 : 5 = 18 : 2',
+                image: null,
+                answers: [
+                    {
+                        text: '5 и 2',
+                        isRight: false,
+                    },
+                    {
+                        text: '45 и 2 ',
+                        isRight: true,
+                    },
+                    {
+                        text: '45 и 18',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Из каких отношений можно составить пропорцию ',
+                image: null,
+                answers: [
+                    {
+                        text: '36 : 6 = 12 : 6',
+                        isRight: false,
+                    },
+                    {
+                        text: '9 : 3 = 21 : 3 ',
+                        isRight: false,
+                    },
+                    {
+                        text: '25 : 5 = 50 : 10',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Найдите неизвестный член пропорции х : 7 = 72 : 12',
+                image: null,
+                answers: [
+                    {
+                        text: '23',
+                        isRight: false,
+                    },
+                    {
+                        text: '72',
+                        isRight: false,
+                    },
+                    {
+                        text: '42',
+                        isRight: true,
+                    }
+                ],
+            },
+        ],
     };
 
     return questionsByWork[workNumber];

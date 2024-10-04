@@ -12,6 +12,8 @@ import Image11 from "./theoryImages/image11.png";
 import Image12 from "./theoryImages/image12.png";
 import Image13 from "./theoryImages/image13.png";
 import Image14 from "./theoryImages/image14.png";
+import Image15 from "./theoryImages/image15.png";
+import Image16 from "./theoryImages/image16.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -72,12 +74,12 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image14
         },
         15: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме отношения',
+            theoryImage: Image15
         },
         16: {
-            theme: 'Самостоятельная работа по теме нахождение наименьшего общего кратного',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме пропорции',
+            theoryImage: Image16
         },
         17: {
             theme: 'Самостоятельная работа ',

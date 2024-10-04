@@ -23,8 +23,8 @@ function MainPage() {
 					<li><Link to="individual-work/12"><h3>По теме среднее арифметическое, среднее значение величин</h3></Link></li>
 					<li><Link to="individual-work/13"><h3>По теме проценты, нахождение процентов от числа</h3></Link></li>
 					<li><Link to="individual-work/14"><h3>По теме нахождение числа по его процентам</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме отношение</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме пропорции</h3></Link></li>
+					<li><Link to="individual-work/15"><h3>По теме отношение</h3></Link></li>
+					<li><Link to="individual-work/16"><h3>По теме пропорции</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме процентное отношение двух чисел</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме прямая и обратная пропорциональная зависимость</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме деление числа в данном отношении</h3></Link></li>
