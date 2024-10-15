@@ -12,6 +12,8 @@ import image18_1 from "./questionImages/image18_1.png";
 import image18_2 from "./questionImages/image18_2.png";
 import image18_3 from "./questionImages/image18_3.png";
 import image20_1 from "./questionImages/image20_1.png";
+import image21_1 from "./questionImages/image21_1.png";
+import image21_2 from "./questionImages/image21_2.png";
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
@@ -1493,6 +1495,143 @@ export default function getIndividualWorkQuestions(workNumber) {
                     },
                     {
                         text: 'конус',
+                        isRight: true,
+                    }
+                ],
+            },
+        ],
+        21: [
+            {
+                order: 1,
+                text: 'На диаграмме показано количество съеденных мороженых в ресторане "Холодная сказка" за год. Определите сколько было съедено мороеного в июле?',
+                image: image21_1,
+                answers: [
+                    {
+                        text: '300',
+                        isRight: false,
+                    },
+                    {
+                        text: '320',
+                        isRight: true,
+                    },
+                    {
+                        text: '340',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'На диаграмме показано количество съеденных мороженых в ресторане "Холодная сказка" за год. Определите сколько мороженного было съедено мороженого в зимние месяца',
+                image: image21_1,
+                answers: [
+                    {
+                        text: '240',
+                        isRight: false,
+                    },
+                    {
+                        text: '160',
+                        isRight: true,
+                    },
+                    {
+                        text: '300',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'На круговой диаграмме показано количество проданных игрушек в магазине Детсткая сказка" за день. Определите сколько процентов кукол купили в магазине ',
+                image: image21_2,
+                answers: [
+                    {
+                        text: '15%',
+                        isRight: true,
+                    },
+                    {
+                        text: '11%',
+                        isRight: false,
+                    },
+                    {
+                        text: '40%',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'На круговой диаграмме показано количество проданных игрушек в магазине Детсткая сказка" за день. Определите сколько машин купили в магазине, если всех в магазине было 200 игрушек. ',
+                image: image21_2,
+                answers: [
+                    {
+                        text: '80 машин',
+                        isRight: true,
+                    },
+                    {
+                        text: '40 машин',
+                        isRight: false,
+                    },
+                    {
+                        text: '60 машин',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
+        22: [
+            {
+                order: 1,
+                text: 'Найдите количество всех способов, которыми можно составить трехцветный флаг из горизонтальных полос красного, белого и синего цветов.',
+                image: null,
+                answers: [
+                    {
+                        text: '6',
+                        isRight: true,
+                    },
+                    {
+                        text: '8',
+                        isRight: false,
+                    },
+                    {
+                        text: '3',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'У Артема дома есть три поручения: помыть посуду, вынести мусор и погулять с собакой. Сколько дней он может выполнять эти поручения в разном порядке?',
+                image: null,
+                answers: [
+                    {
+                        text: '8',
+                        isRight: false,
+                    },
+                    {
+                        text: '6',
+                        isRight: true,
+                    },
+                    {
+                        text: '4',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Сколько трехзначных чисел можно составить из цифр 3,5,7 и 9 ,используя в записи числа каждую из них не более одного раза?',
+                image: null,
+                answers: [
+                    {
+                        text: '12',
+                        isRight: false,
+                    },
+                    {
+                        text: '6',
+                        isRight: false,
+                    },
+                    {
+                        text: '24',
                         isRight: true,
                     }
                 ],
