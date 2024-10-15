@@ -1933,6 +1933,44 @@ export default function getIndividualWorkQuestions(workNumber) {
                     }
                 ],
             },
+            {
+                order: 5,
+                text: 'Решите уравнение |x|=5',
+                image: null,
+                answers: [
+                    {
+                        text: '5 или -5',
+                        isRight: true,
+                    },
+                    {
+                        text: '-5',
+                        isRight: false,
+                    },
+                    {
+                        text: 'нет решения',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 6,
+                text: 'Решите уравнение |x|=-12',
+                image: null,
+                answers: [
+                    {
+                        text: '12 или -12',
+                        isRight: false,
+                    },
+                    {
+                        text: '12',
+                        isRight: false,
+                    },
+                    {
+                        text: 'нет решения',
+                        isRight: true,
+                    }
+                ],
+            },
         ],
     };
 
