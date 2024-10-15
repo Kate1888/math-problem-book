@@ -20,6 +20,8 @@ import Image19 from "./theoryImages/image19.png";
 import Image20 from "./theoryImages/image20.png";
 import Image21 from "./theoryImages/image21.png";
 import Image22 from "./theoryImages/image22.png";
+import Image23 from "./theoryImages/image23.png";
+import Image24 from "./theoryImages/image24.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -112,12 +114,12 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image22
         },
         23: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме положительные и отрицательные числа',
+            theoryImage: Image23
         },
         24: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме координатная прямая',
+            theoryImage: Image24
         },
         25: {
             theme: 'Самостоятельная работа ',

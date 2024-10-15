@@ -14,6 +14,10 @@ import image18_3 from "./questionImages/image18_3.png";
 import image20_1 from "./questionImages/image20_1.png";
 import image21_1 from "./questionImages/image21_1.png";
 import image21_2 from "./questionImages/image21_2.png";
+import image23_1 from "./questionImages/image23_1.png";
+import image24_1 from "./questionImages/image24_1.png";
+import image24_2 from "./questionImages/image24_2.png";
+import image24_3 from "./questionImages/image24_3.png";
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
@@ -1633,6 +1637,143 @@ export default function getIndividualWorkQuestions(workNumber) {
                     {
                         text: '24',
                         isRight: true,
+                    }
+                ],
+            },
+        ],
+        23: [
+            {
+                order: 1,
+                text: 'Данные числа 6; 7; 9,8; 7/9 являются',
+                image: null,
+                answers: [
+                    {
+                        text: 'отрицательными числами',
+                        isRight: false,
+                    },
+                    {
+                        text: 'положительныеми числами',
+                        isRight: true,
+                    },
+                    {
+                        text: 'не положительные, не отрицательные',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Каким является число 0?',
+                image: null,
+                answers: [
+                    {
+                        text: 'положительным числом',
+                        isRight: false,
+                    },
+                    {
+                        text: 'отрицательным числом',
+                        isRight: false,
+                    },
+                    {
+                        text: 'не положительным, не отрицательным',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Выберите то вариант чисел, где все отрицательные',
+                image: null,
+                answers: [
+                    {
+                        text: '6; 9; -7',
+                        isRight: false,
+                    },
+                    {
+                        text: '-9; -7; -7,8',
+                        isRight: true,
+                    },
+                    {
+                        text: '-8; -12; -87; 0 ',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Какой является температура на термометре',
+                image: image23_1,
+                answers: [
+                    {
+                        text: 'положительная температура',
+                        isRight: true,
+                    },
+                    {
+                        text: 'отрицательная температура',
+                        isRight: false,
+                    },
+                    {
+                        text: 'не положительная, не отрицательная',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
+        24: [
+            {
+                order: 1,
+                text: 'Выбери у каких точек отрицательная координата',
+                image: image24_1,
+                answers: [
+                    {
+                        text: 'С и В ',
+                        isRight: true,
+                    },
+                    {
+                        text: 'А и В ',
+                        isRight: false,
+                    },
+                    {
+                        text: 'А и D',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Какую координату имеет точка D',
+                image: image24_2,
+                answers: [
+                    {
+                        text: 'D(1,5)',
+                        isRight: false,
+                    },
+                    {
+                        text: 'D(-3)',
+                        isRight: false,
+                    },
+                    {
+                        text: 'D(-1,5)',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Точка К имеет координату -4, на какой координатной прямой правильно поставлена точка К',
+                image: image24_3,
+                answers: [
+                    {
+                        text: '1',
+                        isRight: false,
+                    },
+                    {
+                        text: '2',
+                        isRight: true,
+                    },
+                    {
+                        text: '3',
+                        isRight: false,
                     }
                 ],
             },
