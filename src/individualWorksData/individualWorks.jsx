@@ -22,6 +22,8 @@ import Image21 from "./theoryImages/image21.png";
 import Image22 from "./theoryImages/image22.png";
 import Image23 from "./theoryImages/image23.png";
 import Image24 from "./theoryImages/image24.png";
+import Image25 from "./theoryImages/image25.png";
+import Image26 from "./theoryImages/image26.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -122,12 +124,12 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image24
         },
         25: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме целые и рациональные числа ',
+            theoryImage: Image25
         },
         26: {
-            theme: 'Самостоятельная работа по теме нахождение наименьшего общего кратного',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме модуль числа',
+            theoryImage: Image26
         },
         27: {
             theme: 'Самостоятельная работа ',

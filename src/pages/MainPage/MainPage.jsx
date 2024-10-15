@@ -33,8 +33,8 @@ function MainPage() {
 					<li><Link to="individual-work/22"><h3>По теме комбинаторные задачи</h3></Link></li>
 					<li><Link to="individual-work/23"><h3>По теме положительные и отрицательные числа</h3></Link></li>
 					<li><Link to="individual-work/24"><h3>По теме координатная прямая</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме целые и рациональные числа</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме модуль числа</h3></Link></li>
+					<li><Link to="individual-work/25"><h3>По теме целые и рациональные числа</h3></Link></li>
+					<li><Link to="individual-work/26"><h3>По теме модуль числа</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме сравнение рациональных чисел</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме сложение рациональных чисел</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме вычитание рациональных чисел</h3></Link></li>

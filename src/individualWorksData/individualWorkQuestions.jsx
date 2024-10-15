@@ -1778,6 +1778,162 @@ export default function getIndividualWorkQuestions(workNumber) {
                 ],
             },
         ],
+        25: [
+            {
+                order: 1,
+                text: 'Выберите где представлена пара противоположных чисел',
+                image: null,
+                answers: [
+                    {
+                        text: '6 и 6',
+                        isRight: false,
+                    },
+                    {
+                        text: '-9 и -9 ',
+                        isRight: false,
+                    },
+                    {
+                        text: '254 и -254',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Каким является число -8,6',
+                image: null,
+                answers: [
+                    {
+                        text: 'Целым и положительным',
+                        isRight: false,
+                    },
+                    {
+                        text: 'Рациональным и отрицаьельным',
+                        isRight: true,
+                    },
+                    {
+                        text: 'Натуральныи и отрицательным',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Каким является число 0',
+                image: null,
+                answers: [
+                    {
+                        text: 'Положительным и целым',
+                        isRight: false,
+                    },
+                    {
+                        text: 'Натуральным и отрицательным',
+                        isRight: false,
+                    },
+                    {
+                        text: 'Целым и рациональным',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Каким является число 6',
+                image: null,
+                answers: [
+                    {
+                        text: 'Положительным и целым',
+                        isRight: true,
+                    },
+                    {
+                        text: 'Натуральным и отрицательным',
+                        isRight: false,
+                    },
+                    {
+                        text: 'Целым и отрицательным',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
+        26: [
+            {
+                order: 1,
+                text: 'Найдите модуль числа 8 ',
+                image: null,
+                answers: [
+                    {
+                        text: '8',
+                        isRight: true,
+                    },
+                    {
+                        text: '-8',
+                        isRight: false,
+                    },
+                    {
+                        text: '16',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Найдите модуль числа -76,7',
+                image: null,
+                answers: [
+                    {
+                        text: '-76,7',
+                        isRight: false,
+                    },
+                    {
+                        text: '76,7',
+                        isRight: true,
+                    },
+                    {
+                        text: '0',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Найдите значение выражения |15| + |-8| ',
+                image: null,
+                answers: [
+                    {
+                        text: '23',
+                        isRight: true,
+                    },
+                    {
+                        text: '7',
+                        isRight: false,
+                    },
+                    {
+                        text: '8',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Найдите значение выражения |-28| x |6| - |-9|',
+                image: null,
+                answers: [
+                    {
+                        text: '84',
+                        isRight: false,
+                    },
+                    {
+                        text: '159',
+                        isRight: true,
+                    },
+                    {
+                        text: '177',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
     };
 
     return questionsByWork[workNumber];
