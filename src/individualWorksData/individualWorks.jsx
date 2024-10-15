@@ -14,6 +14,8 @@ import Image13 from "./theoryImages/image13.png";
 import Image14 from "./theoryImages/image14.png";
 import Image15 from "./theoryImages/image15.png";
 import Image16 from "./theoryImages/image16.png";
+import Image17 from "./theoryImages/image17.png";
+import Image18 from "./theoryImages/image18.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -82,12 +84,12 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image16
         },
         17: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме процентное отношение двух чисел',
+            theoryImage: Image17
         },
         18: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме прямая и обратная пропорциональные зависимости ',
+            theoryImage: Image18
         },
         19: {
             theme: 'Самостоятельная работа ',

@@ -8,6 +8,9 @@ import image9_1 from "./questionImages/image9_1.png";
 import image9_2 from "./questionImages/image9_2.png";
 import image9_3 from "./questionImages/image9_3.png";
 import image13_4 from "./questionImages/image13_4.png";
+import image18_1 from "./questionImages/image18_1.png";
+import image18_2 from "./questionImages/image18_2.png";
+import image18_3 from "./questionImages/image18_3.png";
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
@@ -1235,6 +1238,124 @@ export default function getIndividualWorkQuestions(workNumber) {
                     {
                         text: '42',
                         isRight: true,
+                    }
+                ],
+            },
+        ],
+        17: [
+            {
+                order: 1,
+                text: 'Сколько процентов составляет число 18 от числа 30?',
+                image: null,
+                answers: [
+                    {
+                        text: '60%',
+                        isRight: true,
+                    },
+                    {
+                        text: '0,6%',
+                        isRight: false,
+                    },
+                    {
+                        text: '12%',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Из 200 арбузов 16 оказались незрелыми. Сколько процентов всех арбузов составляют незрелые? ',
+                image: null,
+                answers: [
+                    {
+                        text: '80%',
+                        isRight: false,
+                    },
+                    {
+                        text: '8%',
+                        isRight: true,
+                    },
+                    {
+                        text: '0,8%',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Сколько процентов составляет число 145 от числа 50?',
+                image: null,
+                answers: [
+                    {
+                        text: '280%',
+                        isRight: false,
+                    },
+                    {
+                        text: '27%',
+                        isRight: false,
+                    },
+                    {
+                        text: '290%',
+                        isRight: true,
+                    }
+                ],
+            },
+        ],
+        18: [
+            {
+                order: 1,
+                text: 'Какой пропорциональной зависимостью являются величины ',
+                image: image18_1,
+                answers: [
+                    {
+                        text: 'Прямо пропорциональная зависимость',
+                        isRight: true,
+                    },
+                    {
+                        text: 'Обратно пропорциональная зависимость',
+                        isRight: false,
+                    },
+                    {
+                        text: 'Не прямо и не обратно пропорциональная зависимость',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Какой пропорциональной зависимостью являются величины ',
+                image: image18_2,
+                answers: [
+                    {
+                        text: 'Прямо пропорциональная зависимость',
+                        isRight: false,
+                    },
+                    {
+                        text: 'Обратно пропорциональная зависимость',
+                        isRight: true,
+                    },
+                    {
+                        text: 'Не прямо и не обратно пропорциональная зависимость',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Какой пропорциональной зависимостью является отношение',
+                image: image18_3,
+                answers: [
+                    {
+                        text: 'Прямо пропорциональная зависимость',
+                        isRight: true,
+                    },
+                    {
+                        text: 'Обратно пропорциональная зависимость',
+                        isRight: false,
+                    },
+                    {
+                        text: 'Не прямо и не обратно пропорциональная зависимость',
+                        isRight: false,
                     }
                 ],
             },
