@@ -27,8 +27,8 @@ function MainPage() {
 					<li><Link to="individual-work/16"><h3>По теме пропорции</h3></Link></li>
 					<li><Link to="individual-work/17"><h3>По теме процентное отношение двух чисел</h3></Link></li>
 					<li><Link to="individual-work/18"><h3>По теме прямая и обратная пропорциональная зависимость</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме деление числа в данном отношении</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме круг, цилиндер, конус и шар</h3></Link></li>
+					<li><Link to="individual-work/19"><h3>По теме деление числа в данном отношении</h3></Link></li>
+					<li><Link to="individual-work/20"><h3>По теме длина окружности, круг, цилиндр, конус и шар</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме диаграммы</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме комбинаторные задачи</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме положительные и отрицательные числа</h3></Link></li>

@@ -16,6 +16,8 @@ import Image15 from "./theoryImages/image15.png";
 import Image16 from "./theoryImages/image16.png";
 import Image17 from "./theoryImages/image17.png";
 import Image18 from "./theoryImages/image18.png";
+import Image19 from "./theoryImages/image19.png";
+import Image20 from "./theoryImages/image20.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -88,16 +90,16 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image17
         },
         18: {
-            theme: 'Самостоятельная работа по теме прямая и обратная пропорциональные зависимости ',
+            theme: 'Самостоятельная работа по теме прямая и обратная пропорциональные зависимости',
             theoryImage: Image18
         },
         19: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме деление числа в данном отношении',
+            theoryImage: Image19
         },
         20: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме длина окружности, круг, цилиндр, конус и шар',
+            theoryImage: Image20
         },
         21: {
             theme: 'Самостоятельная работа ',

@@ -11,6 +11,7 @@ import image13_4 from "./questionImages/image13_4.png";
 import image18_1 from "./questionImages/image18_1.png";
 import image18_2 from "./questionImages/image18_2.png";
 import image18_3 from "./questionImages/image18_3.png";
+import image20_1 from "./questionImages/image20_1.png";
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
@@ -1356,6 +1357,143 @@ export default function getIndividualWorkQuestions(workNumber) {
                     {
                         text: 'Не прямо и не обратно пропорциональная зависимость',
                         isRight: false,
+                    }
+                ],
+            },
+        ],
+        19: [
+            {
+                order: 1,
+                text: 'Разделите число 48 в отношении 2:4 ',
+                image: null,
+                answers: [
+                    {
+                        text: '2 и 4',
+                        isRight: false,
+                    },
+                    {
+                        text: '2 и 24',
+                        isRight: false,
+                    },
+                    {
+                        text: '16 и 32',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Разделите число 182 в отношении 12:4:10',
+                image: null,
+                answers: [
+                    {
+                        text: '84, 28 и 70',
+                        isRight: true,
+                    },
+                    {
+                        text: '15, 45 и 18',
+                        isRight: false,
+                    },
+                    {
+                        text: '60, 60, 62',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Для приготовления овощного салата нужны огурец, помидор и листья салата, в отношении 4:5:2. Сколько нужновзять грамм помидоров, чтобы приготовить 44 грамма салата.',
+                image: null,
+                answers: [
+                    {
+                        text: '16',
+                        isRight: true,
+                    },
+                    {
+                        text: '20',
+                        isRight: false,
+                    },
+                    {
+                        text: '8',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
+        20: [
+            {
+                order: 1,
+                text: 'Вычислите радиус окружности, длина которого равна 50,24 см',
+                image: null,
+                answers: [
+                    {
+                        text: '8',
+                        isRight: true,
+                    },
+                    {
+                        text: '4',
+                        isRight: false,
+                    },
+                    {
+                        text: '16',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Найдите диаметр окружности, длина которого равна 37,68 см',
+                image: null,
+                answers: [
+                    {
+                        text: '24',
+                        isRight: false,
+                    },
+                    {
+                        text: '12',
+                        isRight: true,
+                    },
+                    {
+                        text: '6',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Найдите площадь круга, радиус которого равен 5см',
+                image: null,
+                answers: [
+                    {
+                        text: '78,5',
+                        isRight: true,
+                    },
+                    {
+                        text: '15,7',
+                        isRight: false,
+                    },
+                    {
+                        text: '28,14',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'На какую геометрическую фигуру похож данный предмет',
+                image: image20_1,
+                answers: [
+                    {
+                        text: 'цилиндр',
+                        isRight: false,
+                    },
+                    {
+                        text: 'шар',
+                        isRight: false,
+                    },
+                    {
+                        text: 'конус',
+                        isRight: true,
                     }
                 ],
             },
