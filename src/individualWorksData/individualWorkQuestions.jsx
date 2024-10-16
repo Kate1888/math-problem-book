@@ -2186,6 +2186,181 @@ export default function getIndividualWorkQuestions(workNumber) {
                 ],
             },
         ],
+        29: [
+            {
+                order: 1,
+                text: 'Чему равна разность чисел -9 и 5',
+                image: null,
+                answers: [
+                    {
+                        text: '14',
+                        isRight: false,
+                    },
+                    {
+                        text: '-4',
+                        isRight: false,
+                    },
+                    {
+                        text: '-14',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Чему равна разность чисел -24 и -26',
+                image: null,
+                answers: [
+                    {
+                        text: '2',
+                        isRight: true,
+                    },
+                    {
+                        text: '50',
+                        isRight: false,
+                    },
+                    {
+                        text: '-2',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Чему равна разность чисел 65 и 102',
+                image: null,
+                answers: [
+                    {
+                        text: '-37',
+                        isRight: true,
+                    },
+                    {
+                        text: '-167',
+                        isRight: false,
+                    },
+                    {
+                        text: '38',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Решите пример 7 - 92 - (-56) - 12',
+                image: null,
+                answers: [
+                    {
+                        text: '-129',
+                        isRight: false,
+                    },
+                    {
+                        text: '-153',
+                        isRight: false,
+                    },
+                    {
+                        text: '-41',
+                        isRight: true,
+                    }
+                ],
+            },
+        ],
+        30: [
+            {
+                order: 1,
+                text: 'Найди произведение чисел 7 и -9 ',
+                image: null,
+                answers: [
+                    {
+                        text: '-63',
+                        isRight: true,
+                    },
+                    {
+                        text: '63',
+                        isRight: false,
+                    },
+                    {
+                        text: '-2',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Найди произведение чисел -12,5 и -0,5',
+                image: null,
+                answers: [
+                    {
+                        text: '6,25',
+                        isRight: true,
+                    },
+                    {
+                        text: '-6,25',
+                        isRight: false,
+                    },
+                    {
+                        text: '-25',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Если произведение двух чисел положительно, то каких знаков множители?',
+                image: null,
+                answers: [
+                    {
+                        text: 'множители имеют одинаковые знаки',
+                        isRight: true,
+                    },
+                    {
+                        text: 'множители имеют разные знаки',
+                        isRight: false,
+                    },
+                    {
+                        text: 'хотя бы один из множителей равен нулю',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Если произведение двух чисел отрицательное, то каких знаков множители?',
+                image: null,
+                answers: [
+                    {
+                        text: 'множители имеют одинаковые знаки',
+                        isRight: false,
+                    },
+                    {
+                        text: 'хотя бы один из множителей равен нулю',
+                        isRight: false,
+                    },
+                    {
+                        text: 'множители имеют разные знаки',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 5,
+                text: 'Если произведение двух чисел равно нулю, то каких знаков множители?',
+                image: null,
+                answers: [
+                    {
+                        text: 'хотя бы один из множителей равен нулю',
+                        isRight: true,
+                    },
+                    {
+                        text: 'множители имеют одинаковые знаки',
+                        isRight: false,
+                    },
+                    {
+                        text: 'множители имеют разные знаки',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
     };
 
     return questionsByWork[workNumber];
