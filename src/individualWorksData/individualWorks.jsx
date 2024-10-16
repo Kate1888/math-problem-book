@@ -24,6 +24,8 @@ import Image23 from "./theoryImages/image23.png";
 import Image24 from "./theoryImages/image24.png";
 import Image25 from "./theoryImages/image25.png";
 import Image26 from "./theoryImages/image26.png";
+import Image27 from "./theoryImages/image27.png";
+import Image28 from "./theoryImages/image28.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -132,12 +134,12 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image26
         },
         27: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме сравнения рациональных чисел',
+            theoryImage: Image27
         },
         28: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме сложение рациональных чисел',
+            theoryImage: Image28
         },
         29: {
             theme: 'Самостоятельная работа ',

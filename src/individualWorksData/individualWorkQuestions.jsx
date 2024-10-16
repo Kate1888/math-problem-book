@@ -18,6 +18,7 @@ import image23_1 from "./questionImages/image23_1.png";
 import image24_1 from "./questionImages/image24_1.png";
 import image24_2 from "./questionImages/image24_2.png";
 import image24_3 from "./questionImages/image24_3.png";
+import image27_1 from "./questionImages/image27_1.png";
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
@@ -1968,6 +1969,219 @@ export default function getIndividualWorkQuestions(workNumber) {
                     {
                         text: 'нет решения',
                         isRight: true,
+                    }
+                ],
+            },
+        ],
+        27: [
+            {
+                order: 1,
+                text: 'Какой знак сравнения нужно поставить между числами 6 и 9',
+                image: null,
+                answers: [
+                    {
+                        text: '>',
+                        isRight: false,
+                    },
+                    {
+                        text: '<',
+                        isRight: true,
+                    },
+                    {
+                        text: '=',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Какой знак сравнения нужно поставить между числами 12 и -43',
+                image: null,
+                answers: [
+                    {
+                        text: '<',
+                        isRight: false,
+                    },
+                    {
+                        text: '>',
+                        isRight: true,
+                    },
+                    {
+                        text: '=',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Какой знак сравнения нужно поставить между числами -54 и - 72  ',
+                image: null,
+                answers: [
+                    {
+                        text: '>',
+                        isRight: true,
+                    },
+                    {
+                        text: '<',
+                        isRight: false,
+                    },
+                    {
+                        text: '=',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Какую цифру нужно поставить вместо звездочки, чтобы сравнение было верным -6*1 > -621',
+                image: null,
+                answers: [
+                    {
+                        text: '3',
+                        isRight: false,
+                    },
+                    {
+                        text: '2',
+                        isRight: false,
+                    },
+                    {
+                        text: '1',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 5,
+                text: 'Какую цифру нужно поставить вместо звездочки, чтобы сравнение было верным -3,*5 < -3,85',
+                image: null,
+                answers: [
+                    {
+                        text: '9',
+                        isRight: true,
+                    },
+                    {
+                        text: '0',
+                        isRight: false,
+                    },
+                    {
+                        text: '2',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 6,
+                text: 'Выберите верное утверждение',
+                image: image27_1,
+                answers: [
+                    {
+                        text: 'b > a',
+                        isRight: false,
+                    },
+                    {
+                        text: '-n > m',
+                        isRight: false,
+                    },
+                    {
+                        text: '-a > b',
+                        isRight: true,
+                    }
+                ],
+            },
+        ],
+        28: [
+            {
+                order: 1,
+                text: 'Чему равна сумма чисел -8 и -12',
+                image: null,
+                answers: [
+                    {
+                        text: '-20',
+                        isRight: true,
+                    },
+                    {
+                        text: '20',
+                        isRight:false,
+                    },
+                    {
+                        text: '-4',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Чему равна сумма чисел -54 и 30',
+                image: null,
+                answers: [
+                    {
+                        text: '24',
+                        isRight: false,
+                    },
+                    {
+                        text: '84',
+                        isRight: false,
+                    },
+                    {
+                        text: '-24',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Чему равна сумма чисел 232 и -92',
+                image: null,
+                answers: [
+                    {
+                        text: '140',
+                        isRight: true,
+                    },
+                    {
+                        text: '324',
+                        isRight: false,
+                    },
+                    {
+                        text: '-324',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Решити пример -8,43 + 6,12 + (-7) + 9,43 + (-12,12) ',
+                image: null,
+                answers: [
+                    {
+                        text: '-12,43',
+                        isRight: false,
+                    },
+                    {
+                        text: '-12,4',
+                        isRight: false,
+                    },
+                    {
+                        text: '-12',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 5,
+                text: 'Решити пример -9,89 + 4,83 + (-15) + 9,89 + (-11,83)',
+                image: null,
+                answers: [
+                    {
+                        text: '-22',
+                        isRight: true,
+                    },
+                    {
+                        text: '-21,94',
+                        isRight: false,
+                    },
+                    {
+                        text: '23',
+                        isRight: false,
                     }
                 ],
             },

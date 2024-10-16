@@ -35,8 +35,8 @@ function MainPage() {
 					<li><Link to="individual-work/24"><h3>По теме координатная прямая</h3></Link></li>
 					<li><Link to="individual-work/25"><h3>По теме целые и рациональные числа</h3></Link></li>
 					<li><Link to="individual-work/26"><h3>По теме модуль числа</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме сравнение рациональных чисел</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме сложение рациональных чисел</h3></Link></li>
+					<li><Link to="individual-work/27"><h3>По теме сравнение рациональных чисел</h3></Link></li>
+					<li><Link to="individual-work/28"><h3>По теме сложение рациональных чисел</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме вычитание рациональных чисел</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме умножение рациональных чисел</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме деление рациональных чисел</h3></Link></li>
