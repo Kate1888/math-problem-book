@@ -22,8 +22,8 @@ function IndividualWorkTest() {
         return <div>Вопросы не найдены для работы {workNumber}</div>;
     }
 
-    const handleAnswerClick = (isRight) => {
-        if (isRight) {
+    const handleAnswerClick = (answer) => {
+        if (answer.isRight) {
             setScore(score + 1);
         }
 
@@ -57,7 +57,7 @@ function IndividualWorkTest() {
 
                   <div className="answers">
                       {currentQuestion.answers.map((answer, index) => (
-                          <button key={index} onClick={() => handleAnswerClick(answer.isRight)}>
+                          <button key={index} onClick={() => handleAnswerClick(answer)}>
                               {answer.text}
                           </button>
                       ))}
