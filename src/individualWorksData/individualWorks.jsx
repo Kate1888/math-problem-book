@@ -28,6 +28,8 @@ import Image27 from "./theoryImages/image27.png";
 import Image28 from "./theoryImages/image28.png";
 import Image29 from "./theoryImages/image29.png";
 import Image30 from "./theoryImages/image30.png";
+import Image31 from "./theoryImages/image31.png";
+import Image32 from "./theoryImages/image32.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -152,12 +154,12 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image30
         },
         31: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме переместительное и сочетательное свойство умножения рациональных чисел ',
+            theoryImage: Image31
         },
         32: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме распределительное свойство умножения рациональных чисел ',
+            theoryImage: Image32
         },
         33: {
             theme: 'Самостоятельная работа ',

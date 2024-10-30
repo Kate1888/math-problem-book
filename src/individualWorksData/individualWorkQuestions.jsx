@@ -2361,6 +2361,200 @@ export default function getIndividualWorkQuestions(workNumber) {
                 ],
             },
         ],
+        31: [
+            {
+                order: 1,
+                text: 'Упростите выражение -5 * 6a ',
+                image: null,
+                answers: [
+                    {
+                        text: 'a',
+                        isRight: false,
+                    },
+                    {
+                        text: '-11a',
+                        isRight: false,
+                    },
+                    {
+                        text: '-30a',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Упростите выражение -25 * (-3b)',
+                image: null,
+                answers: [
+                    {
+                        text: '75b',
+                        isRight: true,
+                    },
+                    {
+                        text: '-75b',
+                        isRight: false,
+                    },
+                    {
+                        text: '-28b',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Вычислите наиболее удобным способом -0,25 * 7 * 4',
+                image: null,
+                answers: [
+                    {
+                        text: '-7',
+                        isRight: true,
+                    },
+                    {
+                        text: '7,25',
+                        isRight: false,
+                    },
+                    {
+                        text: '-7,25',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Вычислите наиболее удобным способом -0,5 * (-9) * 6',
+                image: null,
+                answers: [
+                    {
+                        text: '28,5',
+                        isRight: false,
+                    },
+                    {
+                        text: '-26,5',
+                        isRight: false,
+                    },
+                    {
+                        text: '27',
+                        isRight: true,
+                    }
+                ],
+            },
+        ],
+        32: [
+            {
+                order: 1,
+                text: 'Раскройте скобки -2(4 + 2a - 5b) ',
+                image: null,
+                answers: [
+                    {
+                        text: '-8 + 2a -5b',
+                        isRight: false,
+                    },
+                    {
+                        text: '-8 - 4a + 10b',
+                        isRight: true,
+                    },
+                    {
+                        text: '8 + 4a - 10b ',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Раскройте скобки -(12a - 10c + 15b)',
+                image: null,
+                answers: [
+                    {
+                        text: '-12a + 10c - 15b',
+                        isRight: true,
+                    },
+                    {
+                        text: '12a - 10c + 15b',
+                        isRight: false,
+                    },
+                    {
+                        text: '-12a - 10c + 15b',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Вынесите общий множитель 4a + 2b + 8c',
+                image: null,
+                answers: [
+                    {
+                        text: '2(2a + b + 4c)',
+                        isRight: true,
+                    },
+                    {
+                        text: '2(2a + 4c)',
+                        isRight: false,
+                    },
+                    {
+                        text: '2(2a + b + 8c)',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Вынесите общий множитель 10a - 15b - 5c',
+                image: null,
+                answers: [
+                    {
+                        text: '5(2a + 3b) ',
+                        isRight: false,
+                    },
+                    {
+                        text: '5(2a - 3b) ',
+                        isRight: false,
+                    },
+                    {
+                        text: '5(2a - 3b - c)',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 5,
+                text: 'Упростите выражение, приведите подобные слагаемые 4a + 7b + 6a - 6b',
+                image: null,
+                answers: [
+                    {
+                        text: '10a + b',
+                        isRight: true,
+                    },
+                    {
+                        text: '11ab',
+                        isRight: false,
+                    },
+                    {
+                        text: '10a - b',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 6,
+                text: 'Упростите выражение, приведите подобные слагаемые 6a - 8c - 7b + 12a - 13b + 9c',
+                image: null,
+                answers: [
+                    {
+                        text: '18a + c - 20b',
+                        isRight: true,
+                    },
+                    {
+                        text: '18a - 20b',
+                        isRight: false,
+                    },
+                    {
+                        text: '18a - c + 20b',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
     };
 
     return questionsByWork[workNumber];
