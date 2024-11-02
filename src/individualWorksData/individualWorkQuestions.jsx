@@ -19,6 +19,10 @@ import image24_1 from "./questionImages/image24_1.png";
 import image24_2 from "./questionImages/image24_2.png";
 import image24_3 from "./questionImages/image24_3.png";
 import image27_1 from "./questionImages/image27_1.png";
+import image36_1 from "./questionImages/image36_1.png";
+import image36_2 from "./questionImages/image36_2.png";
+import image36_3 from "./questionImages/image36_3.png";
+import image36_4 from "./questionImages/image36_4.png";
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
@@ -2707,6 +2711,162 @@ export default function getIndividualWorkQuestions(workNumber) {
                     {
                         text: '2',
                         isRight: true,
+                    }
+                ],
+            },
+        ],
+        35: [
+            {
+                order: 1,
+                text: 'Выберите вырно составленное уравнение при решении залачи: У Никиты было в 3 раза больше пятёрок по физике, чем у Оли. Сколько было пятёрок у Оли, если вместе у них было 8 пятёрок.',
+                image: null,
+                answers: [
+                    {
+                        text: 'x + 3x = 8',
+                        isRight: true,
+                    },
+                    {
+                        text: '3x = 8 ',
+                        isRight: false,
+                    },
+                    {
+                        text: 'x=8',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Выберите вырно составленное уравнение при решении залачи: Необходимо вычислить, какое число было задумано, если его увелдичили на 6, а потом умножили на 4, и получили 36 ',
+                image: null,
+                answers: [
+                    {
+                        text: '(x + 6) * 4 = 36 ',
+                        isRight: true,
+                    },
+                    {
+                        text: 'x + 6 * 4 = 36',
+                        isRight: false,
+                    },
+                    {
+                        text: 'x * 4 + 6 = 36',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Решите задачу: Провод длиной 366 м разрезали на три части, причём первая часть в 3 раза длиннее третьей, а вторая – на 56 м длиннее третьей. Найдите длину каждой части провода.',
+                image: null,
+                answers: [
+                    {
+                        text: '150; 130; 86',
+                        isRight: false,
+                    },
+                    {
+                        text: '188; 120; 58',
+                        isRight: false,
+                    },
+                    {
+                        text: '186; 118; 62',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Решите задачу: От села до города легковой автомобиль доехал за 4 ч, а грузовой – за 7 ч. Найдите скорость каждого автомобиля, если скорость грузового автомобиля на 24 км/ч меньше скорости легкового автомобиля.',
+                image: null,
+                answers: [
+                    {
+                        text: 'Скорость легкового автомабиля 32 км/ч, скорость грузового автомобиля 8 км/ч',
+                        isRight: false,
+                    },
+                    {
+                        text: 'Скорость легкового автомабиля 50 км/ч, скорость грузового автомобиля 30 км/ч',
+                        isRight: false,
+                    },
+                    {
+                        text: 'Скорость легкового автомабиля 56 км/ч, скорость грузового автомобиля 32 км/ч',
+                        isRight: true,
+                    }
+                ],
+            },
+        ],
+        36: [
+            {
+                order: 1,
+                text: 'Выберите на каком ресунке верно проведен перпендикуляр от точки до прямой',
+                image: image36_1,
+                answers: [
+                    {
+                        text: '1',
+                        isRight: true,
+                    },
+                    {
+                        text: '2',
+                        isRight: false,
+                    },
+                    {
+                        text: '3',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Выберите на каком ресунке верно проведен перпендикуляр от точки до прямой',
+                image: image36_2,
+                answers: [
+                    {
+                        text: '1',
+                        isRight: false,
+                    },
+                    {
+                        text: '2',
+                        isRight: false,
+                    },
+                    {
+                        text: '3',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Считая, что длина стороны клетки равна 1,5см, найдите расстояние от точки B до прямой AC ',
+                image: image36_3,
+                answers: [
+                    {
+                        text: '9,5см',
+                        isRight: false,
+                    },
+                    {
+                        text: '6см',
+                        isRight: false,
+                    },
+                    {
+                        text: '9см',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Считая, что длина стороны клетки равна 3,2см, найдите расстояние от точки AB до прямой C ',
+                image: image36_4,
+                answers: [
+                    {
+                        text: '15см',
+                        isRight: false,
+                    },
+                    {
+                        text: '16см',
+                        isRight: true,
+                    },
+                    {
+                        text: '5см',
+                        isRight: false,
                     }
                 ],
             },

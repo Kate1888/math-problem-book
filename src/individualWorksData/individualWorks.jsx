@@ -32,6 +32,8 @@ import Image31 from "./theoryImages/image31.png";
 import Image32 from "./theoryImages/image32.png";
 import Image33 from "./theoryImages/image33.png";
 import Image34 from "./theoryImages/image34.png";
+import Image35 from "./theoryImages/image35.png";
+import Image36 from "./theoryImages/image36.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -172,14 +174,26 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image34
         },
         35: {
+            theme: 'Самостоятельная работа по теме решение задач с помощью уравнений',
+            theoryImage: Image35
+        },
+        36: {
+            theme: 'Самостоятельная работа по теме перпендикулярные прямые',
+            theoryImage: Image36
+        },
+        37: {
             theme: 'Самостоятельная работа ',
             theoryImage: Image6
         },
-        36: {
-            theme: 'Самостоятельная работа по теме нахождение наименьшего общего кратного',
+        38: {
+            theme: 'Самостоятельная работа ',
             theoryImage: Image6
         },
-        37: {
+        39: {
+            theme: 'Самостоятельная работа ',
+            theoryImage: Image6
+        },
+        40: {
             theme: 'Самостоятельная работа ',
             theoryImage: Image6
         }

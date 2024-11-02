@@ -43,8 +43,8 @@ function MainPage() {
 					<li><Link to="individual-work/32"><h3>По теме распределительное свойство умножения рациональных чисел</h3></Link></li>
 					<li><Link to="individual-work/33"><h3>По теме деление рациональных чисел</h3></Link></li>
 					<li><Link to="individual-work/34"><h3>По теме решение уравнений</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме решение задач с помощью уравнений</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме перпендикулярная прямая</h3></Link></li>
+					<li><Link to="individual-work/35"><h3>По теме решение задач с помощью уравнений</h3></Link></li>
+					<li><Link to="individual-work/36"><h3>По теме перпендикулярная прямая</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме осевая и центральная симметрии</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме параллельные прямые</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме координатная плоскость</h3></Link></li>
