@@ -41,8 +41,8 @@ function MainPage() {
 					<li><Link to="individual-work/30"><h3>По теме умножение рациональных чисел</h3></Link></li>
 					<li><Link to="individual-work/31"><h3>По теме переместительное и сочетательное свойство умножения рациональных чисел</h3></Link></li>
 					<li><Link to="individual-work/32"><h3>По теме распределительное свойство умножения рациональных чисел</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме деление рациональных чисел</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме решение уравнений</h3></Link></li>
+					<li><Link to="individual-work/33"><h3>По теме деление рациональных чисел</h3></Link></li>
+					<li><Link to="individual-work/34"><h3>По теме решение уравнений</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме решение задач с помощью уравнений</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме перпендикулярная прямая</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме осевая и центральная симметрии</h3></Link></li>

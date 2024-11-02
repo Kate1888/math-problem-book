@@ -2555,6 +2555,162 @@ export default function getIndividualWorkQuestions(workNumber) {
                 ],
             },
         ],
+        33: [
+            {
+                order: 1,
+                text: 'Выполните деление - 49,6 : (-15,5)',
+                image: null,
+                answers: [
+                    {
+                        text: '3,2',
+                        isRight: true,
+                    },
+                    {
+                        text: '-3,2',
+                        isRight: false,
+                    },
+                    {
+                        text: '3,32',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Выполните деление -234,3 : 3',
+                image: null,
+                answers: [
+                    {
+                        text: '-78,1',
+                        isRight: true,
+                    },
+                    {
+                        text: '-7,81',
+                        isRight: false,
+                    },
+                    {
+                        text: '78,11',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Вычислите 94,2 : (-6) + 8 ',
+                image: null,
+                answers: [
+                    {
+                        text: '-7,7',
+                        isRight: true,
+                    },
+                    {
+                        text: '-23,7',
+                        isRight: false,
+                    },
+                    {
+                        text: '23,7',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Вычислите -48,8 : 2 - 8 ',
+                image: null,
+                answers: [
+                    {
+                        text: '32,8 ',
+                        isRight: false,
+                    },
+                    {
+                        text: '-16,4',
+                        isRight: false,
+                    },
+                    {
+                        text: '-32,4',
+                        isRight: true,
+                    }
+                ],
+            },
+        ],
+        34: [
+            {
+                order: 1,
+                text: 'Найдите корень уравнения 14,2x = -42,6',
+                image: null,
+                answers: [
+                    {
+                        text: '56,8',
+                        isRight: false,
+                    },
+                    {
+                        text: '-3',
+                        isRight: true,
+                    },
+                    {
+                        text: '-3,3',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Найдите корень уравнения -7,5x - 7 = -23,5',
+                image: null,
+                answers: [
+                    {
+                        text: '2,2',
+                        isRight: true,
+                    },
+                    {
+                        text: '-22',
+                        isRight: false,
+                    },
+                    {
+                        text: '22',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Найдите корень уравнения 9x + 8 = 7x - 16',
+                image: null,
+                answers: [
+                    {
+                        text: '-8',
+                        isRight: false,
+                    },
+                    {
+                        text: '13',
+                        isRight: false,
+                    },
+                    {
+                        text: '-12',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Найдите корень уравнения 25x - 18 = 10x + 12',
+                image: null,
+                answers: [
+                    {
+                        text: '22',
+                        isRight: false,
+                    },
+                    {
+                        text: '0,2',
+                        isRight: false,
+                    },
+                    {
+                        text: '2',
+                        isRight: true,
+                    }
+                ],
+            },
+        ],
     };
 
     return questionsByWork[workNumber];
