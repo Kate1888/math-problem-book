@@ -23,6 +23,11 @@ import image36_1 from "./questionImages/image36_1.png";
 import image36_2 from "./questionImages/image36_2.png";
 import image36_3 from "./questionImages/image36_3.png";
 import image36_4 from "./questionImages/image36_4.png";
+import image37_1 from "./questionImages/image37_1.png";
+import image37_2 from "./questionImages/image37_2.png";
+import image37_3 from "./questionImages/image37_3.png";
+import image38_1 from "./questionImages/image38_1.png";
+import image38_2 from "./questionImages/image38_2.png";
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
@@ -2796,7 +2801,7 @@ export default function getIndividualWorkQuestions(workNumber) {
         36: [
             {
                 order: 1,
-                text: 'Выберите на каком ресунке верно проведен перпендикуляр от точки до прямой',
+                text: 'Выберите на каком рисунке верно проведен перпендикуляр от точки до прямой',
                 image: image36_1,
                 answers: [
                     {
@@ -2815,7 +2820,7 @@ export default function getIndividualWorkQuestions(workNumber) {
             },
             {
                 order: 2,
-                text: 'Выберите на каком ресунке верно проведен перпендикуляр от точки до прямой',
+                text: 'Выберите на каком рисунке верно проведен перпендикуляр от точки до прямой',
                 image: image36_2,
                 answers: [
                     {
@@ -2867,6 +2872,124 @@ export default function getIndividualWorkQuestions(workNumber) {
                     {
                         text: '5см',
                         isRight: false,
+                    }
+                ],
+            },
+        ],
+        37: [
+            {
+                order: 1,
+                text: 'Выберите на каком рисунке представлено симметричное изображение относительно прямой l',
+                image: image37_1,
+                answers: [
+                    {
+                        text: '1',
+                        isRight: true,
+                    },
+                    {
+                        text: '2',
+                        isRight: false,
+                    },
+                    {
+                        text: '3',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Сколько осей симметрии имеет данная фигура',
+                image: image37_2,
+                answers: [
+                    {
+                        text: '3',
+                        isRight: false,
+                    },
+                    {
+                        text: '4',
+                        isRight: false,
+                    },
+                    {
+                        text: '6',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Какие точки симметричны относительно прямой l',
+                image: image37_3,
+                answers: [
+                    {
+                        text: 'A и С; F и N',
+                        isRight: false,
+                    },
+                    {
+                        text: 'A и B; F и H',
+                        isRight: false,
+                    },
+                    {
+                        text: 'A и С; F и H',
+                        isRight: true,
+                    }
+                ],
+            },
+        ],
+        38: [
+            {
+                order: 1,
+                text: 'Выберите на каком рисунке прямые a и b являются параллельными',
+                image: image38_1,
+                answers: [
+                    {
+                        text: '1',
+                        isRight: false,
+                    },
+                    {
+                        text: '2',
+                        isRight: false,
+                    },
+                    {
+                        text: '3',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Выберите на каком рисунке прямые a и b непараллельны',
+                image: image38_2,
+                answers: [
+                    {
+                        text: '1',
+                        isRight: false,
+                    },
+                    {
+                        text: '2',
+                        isRight: true,
+                    },
+                    {
+                        text: '3',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Если две прямые перпендикулярны третьей прямой, то такие прямые',
+                image: null,
+                answers: [
+                    {
+                        text: 'перпендикуларны',
+                        isRight: false,
+                    },
+                    {
+                        text: 'пересекаются',
+                        isRight: false,
+                    },
+                    {
+                        text: 'параллельны',
+                        isRight: true,
                     }
                 ],
             },
