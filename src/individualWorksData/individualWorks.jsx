@@ -36,6 +36,7 @@ import Image35 from "./theoryImages/image35.png";
 import Image36 from "./theoryImages/image36.png";
 import Image37 from "./theoryImages/image37.png";
 import Image38 from "./theoryImages/image38.png";
+import Image39 from "./theoryImages/image39.png";
 
 export default function getIndividualWork(workNumber) {
     let works = {
@@ -192,8 +193,8 @@ export default function getIndividualWork(workNumber) {
             theoryImage: Image38
         },
         39: {
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме координатная плоскость',
+            theoryImage: Image39
         },
         40: {
             theme: 'Самостоятельная работа ',

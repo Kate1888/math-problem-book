@@ -47,7 +47,7 @@ function MainPage() {
 					<li><Link to="individual-work/36"><h3>По теме перпендикулярная прямая</h3></Link></li>
 					<li><Link to="individual-work/37"><h3>По теме осевая и центральная симметрии</h3></Link></li>
 					<li><Link to="individual-work/38"><h3>По теме параллельные прямые</h3></Link></li>
-					<li><Link to="page2.html"><h3>По теме координатная плоскость</h3></Link></li>
+					<li><Link to="individual-work/39"><h3>По теме координатная плоскость</h3></Link></li>
 					<li><Link to="page2.html"><h3>По теме графики</h3></Link></li>
 				</font>
 			</ol>

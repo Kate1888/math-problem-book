@@ -28,6 +28,8 @@ import image37_2 from "./questionImages/image37_2.png";
 import image37_3 from "./questionImages/image37_3.png";
 import image38_1 from "./questionImages/image38_1.png";
 import image38_2 from "./questionImages/image38_2.png";
+import image39_1 from "./questionImages/image39_1.png";
+import image39_2 from "./questionImages/image39_2.png";
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
@@ -2990,6 +2992,84 @@ export default function getIndividualWorkQuestions(workNumber) {
                     {
                         text: 'параллельны',
                         isRight: true,
+                    }
+                ],
+            },
+        ],
+        39: [
+            {
+                order: 1,
+                text: 'Выберите координату точки D',
+                image: image39_2,
+                answers: [
+                    {
+                        text: '(-2;-2)',
+                        isRight: true,
+                    },
+                    {
+                        text: '(2;-2)',
+                        isRight: false,
+                    },
+                    {
+                        text: '(-3;2)',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Выберите точку, у которой ордината равна 2',
+                image: image39_2,
+                answers: [
+                    {
+                        text: 'A',
+                        isRight: true,
+                    },
+                    {
+                        text: 'B',
+                        isRight: false,
+                    },
+                    {
+                        text: 'D',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'Выберите точку с координатой (4;4)',
+                image: image39_1,
+                answers: [
+                    {
+                        text: 'H',
+                        isRight: false,
+                    },
+                    {
+                        text: 'F',
+                        isRight: false,
+                    },
+                    {
+                        text: 'G',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'Выберите точку, у которой абсциса равна 0',
+                image: image39_1,
+                answers: [
+                    {
+                        text: 'F',
+                        isRight: false,
+                    },
+                    {
+                        text: 'E',
+                        isRight: true,
+                    },
+                    {
+                        text: 'R',
+                        isRight: false,
                     }
                 ],
             },
