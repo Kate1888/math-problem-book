@@ -54,11 +54,11 @@ function MainPage() {
 			<div className='margin-class'><font size="5"><h3>Контрольные рыботы:</h3></font></div>
 			<ol className='margin-class'>
 				<font size="3">
-					<li><Link to="page2.html"><h3>По теме натуральные числа</h3></Link></li>
-					<li><Link to="page3.html"><h3>По теме геометрические фигуры, фигуры на плоскости</h3></Link></li>
-					<li><Link to="page4.html"><h3>По теме дроби</h3></Link></li>
-					<li><Link to="page5.html"><h3>По теме рациональные числа</h3></Link></li>
-					<li><Link to="page6.html"><h3>Итоговая контрольная работа</h3></Link></li>
+					<li><Link to="control-work/1"><h3>По теме натуральные числа</h3></Link></li>
+					<li><Link to="control-work/2"><h3>По теме геометрические фигуры, фигуры на плоскости</h3></Link></li>
+					<li><Link to="control-work/3"><h3>По теме дроби</h3></Link></li>
+					<li><Link to="control-work/4"><h3>По теме рациональные числа</h3></Link></li>
+					<li><Link to="control-work/5"><h3>Итоговая контрольная работа</h3></Link></li>
 				</font>
 			</ol>
 		</div>

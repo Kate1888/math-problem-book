@@ -1,5 +1,5 @@
 import "./IndividualWorkTheory.css";
-import getIndividualWork from "../../individualWorksData/individualWorks";
+import getIndividualWorks from "../../data/individualWorks/works";
 
 import Header from "../Header/Header";
 import { useParams } from "react-router-dom";
@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 function IndividualWorkTheory() {
 
   let params = useParams();
-  let workData = getIndividualWork(params.id);
+  let workData = getIndividualWorks([params.id])[0];
 
   return (
     <div className="IndividualWorkTheory">

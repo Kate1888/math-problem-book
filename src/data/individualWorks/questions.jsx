@@ -30,6 +30,8 @@ import image38_1 from "./questionImages/image38_1.png";
 import image38_2 from "./questionImages/image38_2.png";
 import image39_1 from "./questionImages/image39_1.png";
 import image39_2 from "./questionImages/image39_2.png";
+
+//Получение вопросов по самостоятельной работе
 export default function getIndividualWorkQuestions(workNumber) {
     let questionsByWork = {
         1: [
