@@ -37,6 +37,7 @@ import Image36 from "./theoryImages/image36.png";
 import Image37 from "./theoryImages/image37.png";
 import Image38 from "./theoryImages/image38.png";
 import Image39 from "./theoryImages/image39.png";
+import Image40 from "./theoryImages/image40.png";
 
 //Получение самостоятельноq работы по номеру самостоятельной работы
 export default function getIndividualWorks(workNumbers) {
@@ -238,8 +239,8 @@ export default function getIndividualWorks(workNumbers) {
         },
         {
             id: 40,
-            theme: 'Самостоятельная работа ',
-            theoryImage: Image6
+            theme: 'Самостоятельная работа по теме графики',
+            theoryImage: Image40
         }
     ];
 

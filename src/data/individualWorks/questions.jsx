@@ -30,6 +30,9 @@ import image38_1 from "./questionImages/image38_1.png";
 import image38_2 from "./questionImages/image38_2.png";
 import image39_1 from "./questionImages/image39_1.png";
 import image39_2 from "./questionImages/image39_2.png";
+import image40_1 from "./questionImages/image40_1.png";
+import image40_2 from "./questionImages/image40_2.png";
+import image40_3 from "./questionImages/image40_3.png";
 
 //Получение вопросов по самостоятельной работе
 export default function getIndividualWorkQuestions(workNumber) {
@@ -3071,6 +3074,84 @@ export default function getIndividualWorkQuestions(workNumber) {
                     },
                     {
                         text: 'R',
+                        isRight: false,
+                    }
+                ],
+            },
+        ],
+        40: [
+            {
+                order: 1,
+                text: 'Определите график какой формулы начертен',
+                image: image40_1,
+                answers: [
+                    {
+                        text: 'y=4x',
+                        isRight: true,
+                    },
+                    {
+                        text: 'y=-4,5x',
+                        isRight: false,
+                    },
+                    {
+                        text: 'y=4,5',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 2,
+                text: 'Определите график какой формулы начертен',
+                image: image40_2,
+                answers: [
+                    {
+                        text: 'y=-3,5x',
+                        isRight: true,
+                    },
+                    {
+                        text: 'y=3x',
+                        isRight: false,
+                    },
+                    {
+                        text: 'y=-2,5x',
+                        isRight: false,
+                    }
+                ],
+            },
+            {
+                order: 3,
+                text: 'На графике представлено кольчество проданных мороженых за рабочий день магазина "Сказка". Определите во сколько было проданно больше всего мороженого?',
+                image: image40_3,
+                answers: [
+                    {
+                        text: '20',
+                        isRight: false,
+                    },
+                    {
+                        text: '16',
+                        isRight: false,
+                    },
+                    {
+                        text: '11',
+                        isRight: true,
+                    }
+                ],
+            },
+            {
+                order: 4,
+                text: 'На графике представлено кольчество проданных мороженых за рабочий день магазина "Сказка". Определите в какое время продали 12 штук мороженого',
+                image: image40_3,
+                answers: [
+                    {
+                        text: '8 и 13',
+                        isRight: false,
+                    },
+                    {
+                        text: '17',
+                        isRight: true,
+                    },
+                    {
+                        text: '10 и 13',
                         isRight: false,
                     }
                 ],
