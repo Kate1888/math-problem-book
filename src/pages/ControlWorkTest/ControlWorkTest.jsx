@@ -36,6 +36,11 @@ function ControlWorkTest() {
         });
       };
 
+    const handleToStart = () => {
+        setAnswers({});
+        setResult(null);
+    }
+
     if (result) {
         return (
           <div>
@@ -49,7 +54,7 @@ function ControlWorkTest() {
             <p>
               Вы ответили правильно на {result.correct} из {result.total} вопросов.
             </p>
-            <button onClick={() => setResult(null)}>Пройти снова</button>
+            <button onClick={() => handleToStart()}>Пройти снова</button>
           </div>
         );
       }
