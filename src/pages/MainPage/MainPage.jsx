@@ -5,7 +5,7 @@ function MainPage() {
 	return (
 		<div className="MainPage">
 			<h1><p align="center">Самостоятельные и контрольные работы по математике 6 класс</p></h1>
-			<h1><p align="center"> Оглавление </p></h1>
+			<h1><p align="center">Оглавление</p></h1>
 			<div className='margin-class'><font size="5"><h3>Самостоятельные рыботы:</h3></font></div>
 			<ol className='margin-class'>
 				<font size="3">

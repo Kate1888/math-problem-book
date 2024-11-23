@@ -10,7 +10,7 @@ function IndividualWorkTest() {
     let params = useParams();
     let workNumber = params.id;
     let workQuestions = getIndividualWorkQuestions(workNumber);
-    let workData = getIndividualWorks(workNumber)[0];
+    let workData = getIndividualWorks([workNumber])[0];
 
     const [currentQuestionNumber, setCurrentQuestionNumber] = useState(0);
     const [score, setScore] = useState(0);
