@@ -35,6 +35,12 @@ function IndividualWorkTest() {
         }
     };
 
+    const handleToStart = () => {
+        setCurrentQuestionNumber(0);
+        setScore(0);
+        setIsFinished(false);
+    }
+
     let currentQuestion = workQuestions[currentQuestionNumber];
 
   return (
@@ -67,6 +73,7 @@ function IndividualWorkTest() {
               <div>
                   <h2>Тест завершен!</h2>
                   <p>Ваш результат: {score} из {workQuestions.length}</p>
+                  <button onClick={() => handleToStart()}>Пройти снова</button>
               </div>
           )}
       </div>
