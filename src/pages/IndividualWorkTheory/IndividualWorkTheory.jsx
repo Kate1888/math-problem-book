@@ -1,7 +1,7 @@
 import "./IndividualWorkTheory.css";
 import getIndividualWorks from "../../data/individualWorks/works";
 
-import Header from "../Header/Header";
+import Header from "../Headers/IndividualWorkHeader";
 import { useParams } from "react-router-dom";
 
 function IndividualWorkTheory() {

@@ -1,8 +1,9 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from './pages/MainPage/MainPage'; 
 import IndividualWorkTheory from './pages/IndividualWorkTheory/IndividualWorkTheory';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import IndividualWorkTest from "./pages/IndividualWorkTest/IndividualWorkTest";
 import ControlWorkTheory from "./pages/ControlWorkTheory/ControlWorkTheory";
+import ControlWorkTest from './pages/ControlWorkTest/ControlWorkTest';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
                 <Route path="/individual-work/:id" element={<IndividualWorkTheory/>} />
                 <Route path="/individual-work/:id/test" element={<IndividualWorkTest/>} />
                 <Route path="/control-work/:id" element={<ControlWorkTheory/>} />
+                <Route path="/control-work/:id/test" element={<ControlWorkTest/>} />
             </Routes>
         </Router>
     </div>

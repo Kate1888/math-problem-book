@@ -3,7 +3,7 @@ import {useParams} from "react-router-dom";
 import getIndividualWorkQuestions from "../../data/individualWorks/questions";
 import getIndividualWorks from "../../data/individualWorks/works";
 import {useState} from "react";
-import Header from "../Header/Header";
+import Header from "../Headers/IndividualWorkHeader";
 
 function IndividualWorkTest() {
 
