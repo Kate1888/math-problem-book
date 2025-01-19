@@ -1,5 +1,6 @@
 import {Box, Button, Heading, Text, VStack, Container, Link} from "@chakra-ui/react";
-import Layout from "../shared-components/layout/layout"; // Предположим, что Layout у нас уже есть
+import Layout from "../shared-components/layout/layout";
+import {Link as RouterLink} from "react-router-dom"; // Предположим, что Layout у нас уже есть
 
 const LandingPage = () => {
 	return (
@@ -49,7 +50,7 @@ const LandingPage = () => {
 					<Text fontSize="xl" mb={6}>
 						Пройдите теоретическую подготовку и тренажеры, чтобы успешно сдать контрольные работы и экзамены.
 					</Text>
-					<Link href="/topics" _hover={{ textDecoration: "none" }}>
+					<Link as={RouterLink} to="/topics" _hover={{ textDecoration: "none" }}>
 						<Button colorScheme="blue" size="lg" >
 							Перейти к изучению
 						</Button>
