@@ -4,6 +4,7 @@ import getIndividualWorkQuestions from "../../data/individualWorks/questions";
 import getIndividualWorks from "../../data/individualWorks/works";
 import {useState} from "react";
 import Header from "../Headers/IndividualWorkHeader";
+import { Button } from "../../components/ui/button"
 
 function IndividualWorkTest() {
 
@@ -63,9 +64,9 @@ function IndividualWorkTest() {
 
                   <div className="answers">
                       {currentQuestion.answers.map((answer, index) => (
-                          <button key={index} onClick={() => handleAnswerClick(answer)}>
+                          <Button key={index} onClick={() => handleAnswerClick(answer)}>
                               {answer.text}
-                          </button>
+                          </Button>
                       ))}
                   </div>
               </div>
