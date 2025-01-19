@@ -1,84 +1,173 @@
-import './individual-work-test.css';
-import {useParams} from "react-router-dom";
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import {
+    Box,
+    Button,
+    Heading,
+    Image,
+    Stack,
+    Text,
+    VStack,
+    HStack,
+} from "@chakra-ui/react";
+import Layout from "../shared-components/layout/layout"; // Подключаем Layout
 import getIndividualWorkQuestions from "../../data/individual-works/questions";
 import getIndividualWorks from "../../data/individual-works/works";
-import {useState} from "react";
-import Header from "../headers/individual-work-header";
-import { Button } from "../../components/ui/button"
 
-function IndividualWorkTest() {
+const TestResult = ({ score, total, onRetry }) => {
+    return (
+        <Box
+            textAlign="center"
+            p={6}
+            borderWidth={1}
+            borderRadius="md"
+            boxShadow="lg"
+            w="full"
+        >
+            <Heading size="lg" mb={4}>
+                Тест завершен!
+            </Heading>
+            <Text fontSize="lg" mb={4}>
+                Ваш результат: <strong>{score}</strong> из <strong>{total}</strong>
+            </Text>
+            <Button colorScheme="blue" onClick={onRetry}>
+                Пройти снова
+            </Button>
+        </Box>
+    );
+};
 
-    let params = useParams();
-    let workNumber = params.id;
-    let workQuestions = getIndividualWorkQuestions(workNumber);
-    let workData = getIndividualWorks([workNumber])[0];
+const IndividualWorkTest = () => {
+    const params = useParams();
+    const workNumber = params.id;
+    const workQuestions = getIndividualWorkQuestions(workNumber);
+    const workData = getIndividualWorks([workNumber])[0];
 
     const [currentQuestionNumber, setCurrentQuestionNumber] = useState(0);
     const [score, setScore] = useState(0);
     const [isFinished, setIsFinished] = useState(false);
+    const [selectedAnswer, setSelectedAnswer] = useState(null);
 
-
-    // Добавляем проверку на наличие вопросов
-    if (!workQuestions || workQuestions.length === 0) {
-        return <div>Вопросы не найдены для работы {workNumber}</div>;
+    const theoryButton = {
+        link: `/individual-work/${workData.id}`
     }
 
-    const handleAnswerClick = (answer) => {
-        if (answer.isRight) {
+    // Проверка наличия вопросов
+    if (!workQuestions || workQuestions.length === 0) {
+        return (
+            <Layout theoryButton={theoryButton}>
+                <Box mt={6} p={4} borderWidth={1} borderRadius="md" bg="red.100">
+                    <Text>Вопросы не найдены для работы {workNumber}</Text>
+                </Box>
+            </Layout>
+        );
+    }
+
+    const currentQuestion = workQuestions[currentQuestionNumber];
+
+    const handleNextQuestion = () => {
+        if (selectedAnswer && selectedAnswer.isRight) {
             setScore(score + 1);
         }
 
-        const nextQuestion = currentQuestionNumber + 1;
-        if (nextQuestion < workQuestions.length) {
-            setCurrentQuestionNumber(nextQuestion);
+        if (currentQuestionNumber + 1 < workQuestions.length) {
+            setCurrentQuestionNumber(currentQuestionNumber + 1);
+            setSelectedAnswer(null); // Сброс выбранного ответа
         } else {
             setIsFinished(true);
         }
     };
 
-    const handleToStart = () => {
+    const handleRetry = () => {
         setCurrentQuestionNumber(0);
         setScore(0);
         setIsFinished(false);
-    }
+        setSelectedAnswer(null);
+    };
 
-    let currentQuestion = workQuestions[currentQuestionNumber];
+    return (
+        <Layout theoryButton={theoryButton}>
+            <VStack align="start" spacing={6} p={6}>
+                {/* Заголовок теста */}
+                <Heading size="lg" textAlign="center" w="full">
+                    {workData?.theme || "Самостоятельная работа"}
+                </Heading>
 
-  return (
-      <div className="IndividualWorkTest">
-          <h1>
-              <p align="center">
-                  {workData.theme}
-              </p>
-          </h1>
+                {/* Основной контент */}
+                {!isFinished ? (
+                    <Box w="full">
+                        {/* Текущий вопрос */}
+                        <VStack align="start" spacing={4} mb={6} w="full">
+                            <Heading size="md">
+                                {currentQuestion.order}. {currentQuestion.text}
+                            </Heading>
 
-          <Header/>
+                            {/* Изображение */}
+                            {currentQuestion.image && (
+                                <Image
+                                    src={currentQuestion.image}
+                                    alt="Question related"
+                                    maxW="100%"
+                                    objectFit="contain"
+                                    borderRadius="md"
+                                    boxShadow="sm"
+                                />
+                            )}
+                        </VStack>
 
-          {!isFinished ? (
-              <div>
-                  <h3>{currentQuestion.order}. {currentQuestion.text}</h3>
+                        {/* Разделение вопроса и ответов */}
+                        <Box borderBottom="1px solid" borderColor="gray.300" mb={4} />
 
-                  {currentQuestion.image && (
-                      <img src={currentQuestion.image} alt="Question related"/>
-                  )}
+                        {/* Ответы */}
+                        <Stack spacing={4} w="full">
+                            {currentQuestion.answers.map((answer, index) => (
+                                <HStack
+                                    key={index}
+                                    p={3}
+                                    borderWidth={1}
+                                    borderRadius="md"
+                                    w="full"
+                                    cursor="pointer"
+                                    _hover={{ bg: "blue.50" }}
+                                    onClick={() => setSelectedAnswer(answer)}
+                                >
+                                    <Box
+                                        borderWidth={1}
+                                        w={6}
+                                        h={6}
+                                        borderRadius="full"
+                                        bg={selectedAnswer?.text === answer.text ? "blue.500" : "white"}
+                                        borderColor="blue.500"
+                                    />
+                                    <Text>{answer.text}</Text>
+                                </HStack>
+                            ))}
+                        </Stack>
 
-                  <div className="answers">
-                      {currentQuestion.answers.map((answer, index) => (
-                          <Button key={index} onClick={() => handleAnswerClick(answer)}>
-                              {answer.text}
-                          </Button>
-                      ))}
-                  </div>
-              </div>
-          ) : (
-              <div>
-                  <h2>Тест завершен!</h2>
-                  <p>Ваш результат: {score} из {workQuestions.length}</p>
-                  <button onClick={() => handleToStart()}>Пройти снова</button>
-              </div>
-          )}
-      </div>
-  );
-}
+                        {/* Кнопка перехода к следующему вопросу */}
+                        <Button
+                            mt={6}
+                            colorScheme="blue"
+                            onClick={handleNextQuestion}
+                            isDisabled={!selectedAnswer}
+                            w="full"
+                        >
+                            {currentQuestionNumber + 1 < workQuestions.length
+                                ? "Следующий вопрос"
+                                : "Завершить тест"}
+                        </Button>
+                    </Box>
+                ) : (
+                    // Результаты теста
+                    <TestResult
+                        score={score}
+                        total={workQuestions.length}
+                        onRetry={handleRetry}
+                    />
+                )}
+            </VStack>
+        </Layout>
+    );
+};
 
 export default IndividualWorkTest;

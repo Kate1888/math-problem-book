@@ -8,12 +8,12 @@ function IndividualWorkTheory() {
     let params = useParams();
     let workData = getIndividualWorks([params.id])[0];
 
-    const secondaryNav = {
-        link: `/individual-work/${workData.id}/test`,
+    const testButton = {
+        link: `/individual-work/${workData.id}/test`
     }
 
     return (
-        <Layout secondaryNav={secondaryNav}>
+        <Layout testButton={testButton}>
             <VStack align="start" spacing={6} p={6}>
                 {/* Заголовок */}
                 <Heading size="xl">{workData.theme}</Heading>

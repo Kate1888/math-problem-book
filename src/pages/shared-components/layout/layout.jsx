@@ -1,6 +1,8 @@
-import { Box, Flex, Heading, HStack, Button, Link } from "@chakra-ui/react";
+import { Box, Flex, HStack, Button, Link } from "@chakra-ui/react";
 
-const Layout = ({ children, secondaryNav }) => {
+const Layout = ({ children, theoryButton, testButton }) => {
+    console.log(theoryButton);
+    console.log(testButton);
     return (
         <Box bg="gray.50" minH="100vh">
             {/* Основной хедер */}
@@ -23,8 +25,13 @@ const Layout = ({ children, secondaryNav }) => {
                                 Оглавление
                             </Button>
                         </Link>
-                        {secondaryNav && (
-                            <Link href={secondaryNav.link} _hover={{ textDecoration: "none" }}>
+                        {theoryButton && (
+                            <Link href={theoryButton.link} _hover={{ textDecoration: "none" }}>
+                                <Button colorScheme="blue">Теория</Button>
+                            </Link>
+                        )}
+                        {testButton && (
+                            <Link href={testButton.link} _hover={{ textDecoration: "none" }}>
                                 <Button colorScheme="blue">Тренажер</Button>
                             </Link>
                         )}
