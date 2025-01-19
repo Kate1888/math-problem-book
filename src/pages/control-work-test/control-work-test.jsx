@@ -11,7 +11,7 @@ import {
     HStack,
 } from "@chakra-ui/react";
 import Layout from "../shared-components/layout/layout";
-import getControlWork from "../../data/control-works/works";
+import {getControlWork} from "../../data/control-works/works";
 import getControlWorkQuestions from "../../data/control-works/questions";
 
 const ControlWorkTest = () => {

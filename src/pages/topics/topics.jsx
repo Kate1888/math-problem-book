@@ -1,24 +1,13 @@
 import { VStack, Box, Heading, Link, List, ListItem } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import Layout from "../shared-components/layout/layout";
-
-const individualWorks = [
-	{ id: 1, title: "По теме действия с натуральными числами" },
-	{ id: 2, title: "По теме числовые и буквенные выражения" },
-	{ id: 3, title: "По теме признаки делимости натуральных чисел" },
-	{ id: 4, title: "По теме простые и составные числа" },
-	{ id: 5, title: "По теме нахождение наибольшего общего делителя" }
-];
-
-const controlWorks = [
-	{ id: 1, title: "По теме натуральные числа" },
-	{ id: 2, title: "По теме геометрические фигуры, фигуры на плоскости" },
-	{ id: 3, title: "По теме дроби" },
-	{ id: 4, title: "По теме рациональные числа" },
-	{ id: 5, title: "Итоговая контрольная работа" },
-];
+import {getIndividualWorks} from "../../data/individual-works/works";
+import {getControlWorks} from "../../data/control-works/works";
 
 const TopicsPage = () => {
+	const individualWorks = getIndividualWorks();
+	const controlWorks = getControlWorks();
+
 	return (
 		<Layout>
 			<VStack align="start" spacing={8}>
@@ -36,7 +25,7 @@ const TopicsPage = () => {
 									color="blue.500"
 									_hover={{ textDecoration: "underline" }}
 								>
-									{work.title}
+									{work.theme}
 								</Link>
 							</List.Item>
 						))}
@@ -57,7 +46,7 @@ const TopicsPage = () => {
 									color="blue.500"
 									_hover={{ textDecoration: "underline" }}
 								>
-									{work.title}
+									{work.theme}
 								</Link>
 							</List.Item>
 						))}

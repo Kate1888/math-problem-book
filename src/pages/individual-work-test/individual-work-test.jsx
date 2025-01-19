@@ -3,7 +3,7 @@ import {useParams} from "react-router-dom";
 import {Box, Heading, Text, VStack,} from "@chakra-ui/react";
 import Layout from "../shared-components/layout/layout"; // Подключаем Layout
 import getIndividualWorkQuestions from "../../data/individual-works/questions";
-import getIndividualWorks from "../../data/individual-works/works";
+import {getIndividualWorkByNumber} from "../../data/individual-works/works";
 import {TestQuestion} from "./test-question";
 import {TestResult} from "./test-result";
 
@@ -11,7 +11,7 @@ const IndividualWorkTest = () => {
     const params = useParams();
     const workNumber = params.id;
     const workQuestions = getIndividualWorkQuestions(workNumber);
-    const workData = getIndividualWorks([workNumber])[0];
+    const workData = getIndividualWorkByNumber(workNumber);
 
     const [currentQuestionNumber, setCurrentQuestionNumber] = useState(0);
     const [score, setScore] = useState(0);

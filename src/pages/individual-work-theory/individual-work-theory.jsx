@@ -2,11 +2,11 @@ import {useParams} from "react-router-dom";
 import React from "react";
 import {Box, VStack, Heading, Text, Image} from "@chakra-ui/react";
 import Layout from "../shared-components/layout/layout";
-import getIndividualWorks from "../../data/individual-works/works";
+import {getIndividualWorkByNumber} from "../../data/individual-works/works";
 
 function IndividualWorkTheory() {
     let params = useParams();
-    let workData = getIndividualWorks([params.id])[0];
+    let workData = getIndividualWorkByNumber(params.id);
 
     const testButton = {
         link: `/individual-work/${workData.id}/test`

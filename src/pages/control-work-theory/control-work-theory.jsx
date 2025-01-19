@@ -2,14 +2,14 @@ import React from "react";
 import { useParams, Link as RouterLink } from "react-router-dom";
 import { Box, Heading, VStack, List, Link, Text } from "@chakra-ui/react";
 import Layout from "../shared-components/layout/layout"; // Подключаем Layout
-import getControlWork from "../../data/control-works/works"; // Получение данных контрольной работы
-import getIndividualWorks from "../../data/individual-works/works"; // Получение данных самостоятельных работ
+import {getControlWork} from "../../data/control-works/works"; // Получение данных контрольной работы
+import {getIndividualWorksByNumbers} from "../../data/individual-works/works"; // Получение данных самостоятельных работ
 
 const ControlWorkTheory = () => {
     const params = useParams();
     const workNumber = Number(params.id);
     const workData = getControlWork(params.id);
-    const individualWorks = getIndividualWorks(workData.individualWorks);
+    const individualWorks = getIndividualWorksByNumbers(workData.individualWorks);
 
     if (!workData) {
         return (
