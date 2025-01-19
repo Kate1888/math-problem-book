@@ -1,8 +1,6 @@
 import { Box, Flex, HStack, Button, Link } from "@chakra-ui/react";
 
 const Layout = ({ children, theoryButton, testButton }) => {
-    console.log(theoryButton);
-    console.log(testButton);
     return (
         <Box bg="gray.50" minH="100vh">
             {/* Основной хедер */}
