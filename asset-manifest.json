@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/math-problem-book/static/css/main.e6c13ad2.css",
-    "main.js": "/math-problem-book/static/js/main.c9dde8c9.js",
+    "main.js": "/math-problem-book/static/js/main.eddd9f1e.js",
     "static/js/453.a460a9d6.chunk.js": "/math-problem-book/static/js/453.a460a9d6.chunk.js",
     "static/media/image20.png": "/math-problem-book/static/media/image20.4a363c076a1345ed0118.png",
     "static/media/image8.png": "/math-problem-book/static/media/image8.8c761d664aa312ae3c66.png",
@@ -61,11 +61,11 @@
     "static/media/image21_1.png": "/math-problem-book/static/media/image21_1.b48ad369016aa9605215.png",
     "index.html": "/math-problem-book/index.html",
     "main.e6c13ad2.css.map": "/math-problem-book/static/css/main.e6c13ad2.css.map",
-    "main.c9dde8c9.js.map": "/math-problem-book/static/js/main.c9dde8c9.js.map",
+    "main.eddd9f1e.js.map": "/math-problem-book/static/js/main.eddd9f1e.js.map",
     "453.a460a9d6.chunk.js.map": "/math-problem-book/static/js/453.a460a9d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.c9dde8c9.js"
+    "static/js/main.eddd9f1e.js"
   ]
 }
