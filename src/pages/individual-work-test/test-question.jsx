@@ -8,13 +8,12 @@ export const TestQuestion = ({
                                  onNextQuestion,
                                  isLastQuestion,
                              }) => {
+    let questionHtml = `${currentQuestion.order}. ${currentQuestion.text}`;
     return (
         <Box w="full">
             {/* Текущий вопрос */}
             <VStack align="start" spacing={4} mb={6} w="full">
-                <Heading size="md">
-                    {currentQuestion.order}. {currentQuestion.text}
-                </Heading>
+                <Text size="md" dangerouslySetInnerHTML={{ __html: questionHtml }}/>
 
                 {/* Изображение */}
                 {currentQuestion.image && (
@@ -55,7 +54,7 @@ export const TestQuestion = ({
                             }
                             borderColor="blue.500"
                         />
-                        <Text>{answer.text}</Text>
+                        <Text dangerouslySetInnerHTML={{ __html: answer.text }}/>
                     </HStack>
                 ))}
             </Stack>
