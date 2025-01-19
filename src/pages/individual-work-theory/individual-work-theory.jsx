@@ -1,31 +1,35 @@
-import "./individual-work-theory.css";
+import {useParams} from "react-router-dom";
+import React from "react";
+import {Box, VStack, Heading, Text, Image} from "@chakra-ui/react";
+import Layout from "../shared-components/layout/layout";
 import getIndividualWorks from "../../data/individual-works/works";
 
-import Header from "../headers/individual-work-header";
-import { useParams } from "react-router-dom";
-
 function IndividualWorkTheory() {
+    let params = useParams();
+    let workData = getIndividualWorks([params.id])[0];
 
-  let params = useParams();
-  let workData = getIndividualWorks([params.id])[0];
+    const secondaryNav = {
+        link: `/individual-work/${workData.id}/test`,
+    }
 
-  return (
-    <div className="IndividualWorkTheory">
-      <h1>
-        <p align="center">
-          {workData.theme}
-        </p>
-      </h1>
-	  
-      <Header />
+    return (
+        <Layout secondaryNav={secondaryNav}>
+            <VStack align="start" spacing={6} p={6}>
+                {/* Заголовок */}
+                <Heading size="xl">{workData.theme}</Heading>
 
-      <table border="1" className="margin-25" bgcolor="#FFFFFF">
-        <th align="left">
-          <img src={workData.theoryImage} />
-        </th>
-      </table>
-    </div>
-  );
+                {/* Картинка */}
+                <Box>
+                    <Image
+                        src={workData.theoryImage}
+                        alt="Теория"
+                        maxWidth="100%"
+                        objectFit="contain"
+                    />
+                </Box>
+            </VStack>
+        </Layout>
+    );
 }
 
 export default IndividualWorkTheory;
