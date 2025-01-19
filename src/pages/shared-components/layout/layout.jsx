@@ -1,4 +1,5 @@
 import { Box, Flex, HStack, Button, Link, Container, Text } from "@chakra-ui/react";
+import {Link as RouterLink} from "react-router-dom";
 
 const Layout = ({ children, theoryButton, testButton }) => {
     return (
@@ -14,23 +15,23 @@ const Layout = ({ children, theoryButton, testButton }) => {
                     w="100%"
                 >
                     <HStack spacing={4}>
-                        <Link href="/" _hover={{ textDecoration: "none" }}>
+                        <Link as={RouterLink} to="/" _hover={{ textDecoration: "none" }}>
                             <Button variant="outline" colorScheme="blue">
                                 Главная
                             </Button>
                         </Link>
-                        <Link href="/topics" _hover={{ textDecoration: "none" }}>
+                        <Link as={RouterLink} to="/topics" _hover={{ textDecoration: "none" }}>
                             <Button variant="outline" colorScheme="blue">
                                 Оглавление
                             </Button>
                         </Link>
                         {theoryButton && (
-                            <Link href={theoryButton.link} _hover={{ textDecoration: "none" }}>
+                            <Link as={RouterLink} to={theoryButton.link} _hover={{ textDecoration: "none" }}>
                                 <Button colorScheme="blue">Теория</Button>
                             </Link>
                         )}
                         {testButton && (
-                            <Link href={testButton.link} _hover={{ textDecoration: "none" }}>
+                            <Link as={RouterLink} to={testButton.link} _hover={{ textDecoration: "none" }}>
                                 <Button colorScheme="blue">Тренажер</Button>
                             </Link>
                         )}
