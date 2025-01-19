@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 import HomePage from './pages/home/home';
 import IndividualWorkTheory from './pages/individual-work-theory/individual-work-theory';
 import IndividualWorkTest from "./pages/individual-work-test/individual-work-test";
