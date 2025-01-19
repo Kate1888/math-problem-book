@@ -11,7 +11,7 @@ function App() {
     return (
         <div className="App">
             <Provider>
-                <Router basename="/math-problem-book">
+                <Router>
                     <Routes>
                         <Route path="/" element={<HomePage/>}/>
                         <Route path="/topics" element={<TopicsPage/>}/>
