@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams, Link as RouterLink } from "react-router-dom";
 import { Box, Heading, VStack, List, Link, Text } from "@chakra-ui/react";
-import Layout from "../shared-components/layout/layout"; // Подключаем Layout
-import {getControlWork} from "../../data/control-works/works"; // Получение данных контрольной работы
-import {getIndividualWorksByNumbers} from "../../data/individual-works/works"; // Получение данных самостоятельных работ
+import Layout from "../shared-components/layout/layout";
+import {getControlWork} from "../../data/control-works/works";
+import {getIndividualWorksByNumbers} from "../../data/individual-works/works";
 
 const ControlWorkTheory = () => {
     const params = useParams();
