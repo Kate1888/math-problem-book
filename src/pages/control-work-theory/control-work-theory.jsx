@@ -1,8 +1,8 @@
-import "./ControlWorkTheory.css";
-import getControlWork from "../../data/controlWorks/works";
-import getIndividualWorks from "../../data/individualWorks/works";
+import "./control-work-theory.css";
+import getControlWork from "../../data/control-works/works";
+import getIndividualWorks from "../../data/individual-works/works";
 
-import Header from "../Headers/ControlWorkHeader";
+import Header from "../headers/control-work-header";
 import { Link, useParams } from "react-router-dom";
 
 function ControlWorkTheory() {

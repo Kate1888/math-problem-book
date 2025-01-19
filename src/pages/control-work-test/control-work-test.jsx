@@ -1,9 +1,9 @@
-import './ControlWorkTest.css';
+import './control-work-test.css';
 import {useParams} from "react-router-dom";
-import getControlWorkQuestions from "../../data/controlWorks/questions";
-import getControlWork from "../../data/controlWorks/works";
+import getControlWorkQuestions from "../../data/control-works/questions";
+import getControlWork from "../../data/control-works/works";
 import {useState} from "react";
-import Header from "../Headers/ControlWorkHeader";
+import Header from "../headers/control-work-header";
 
 function ControlWorkTest() {
     let params = useParams();

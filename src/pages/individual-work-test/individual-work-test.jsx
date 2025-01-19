@@ -1,9 +1,9 @@
-import './IndividualWorkTest.css';
+import './individual-work-test.css';
 import {useParams} from "react-router-dom";
-import getIndividualWorkQuestions from "../../data/individualWorks/questions";
-import getIndividualWorks from "../../data/individualWorks/works";
+import getIndividualWorkQuestions from "../../data/individual-works/questions";
+import getIndividualWorks from "../../data/individual-works/works";
 import {useState} from "react";
-import Header from "../Headers/IndividualWorkHeader";
+import Header from "../headers/individual-work-header";
 import { Button } from "../../components/ui/button"
 
 function IndividualWorkTest() {

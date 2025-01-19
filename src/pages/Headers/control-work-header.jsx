@@ -1,11 +1,11 @@
 import {Link, useParams} from "react-router-dom";
-import "./Headers.css";
+import "./headers.css";
 
-function IndividualWorkHeader() {
+function ControlWorkHeader() {
     let params = useParams();
 
-    let theoryLink = '/individual-work/' + params.id;
-    let testLink = '/individual-work/' + params.id + '/test';
+    let theoryLink = '/control-work/' + params.id;
+    let testLink = '/control-work/' + params.id + '/test';
 
   return (
     <div className="Header">
@@ -18,4 +18,4 @@ function IndividualWorkHeader() {
   );
 }
 
-export default IndividualWorkHeader;
+export default ControlWorkHeader;

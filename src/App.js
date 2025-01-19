@@ -1,9 +1,9 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import MainPage from './pages/MainPage/MainPage';
-import IndividualWorkTheory from './pages/IndividualWorkTheory/IndividualWorkTheory';
-import IndividualWorkTest from "./pages/IndividualWorkTest/IndividualWorkTest";
-import ControlWorkTheory from "./pages/ControlWorkTheory/ControlWorkTheory";
-import ControlWorkTest from './pages/ControlWorkTest/ControlWorkTest';
+import MainPage from './pages/main-page/main-page';
+import IndividualWorkTheory from './pages/individual-work-theory/individual-work-theory';
+import IndividualWorkTest from "./pages/individual-work-test/individual-work-test";
+import ControlWorkTheory from "./pages/control-work-theory/control-work-theory";
+import ControlWorkTest from './pages/control-work-test/control-work-test';
 import {Provider} from "./components/ui/provider"
 
 function App() {
