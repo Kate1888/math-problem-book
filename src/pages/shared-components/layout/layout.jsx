@@ -1,10 +1,12 @@
 import { Box, Flex, HStack, Button, Link, Container, Text, IconButton } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { LuUser } from "react-icons/lu";
+import ScrollToTop from "../scroll-to-top/scroll-to-top";
 
 const Layout = ({ children, theoryButton, testButton }) => {
     return (
         <Box bg="gray.50" minH="100vh" display="flex" flexDirection="column">
+            <ScrollToTop />
             {/* Основной хедер */}
             <Box bg="blue.100" py={3} w="100%">
                 <Flex
