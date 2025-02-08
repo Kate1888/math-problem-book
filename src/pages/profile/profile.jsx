@@ -39,7 +39,7 @@ const ProfilePage = () => {
                 </Text>
                 <Button colorScheme="red" onClick={handleReset}>Сбросить статистику</Button>
             </Box>
-            
+
             <VStack spacing={10} align="stretch">
                 {/* График по самостоятельным работам */}
                 <Box p={6} shadow="md" borderRadius="lg" bg="white">
