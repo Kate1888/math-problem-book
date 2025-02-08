@@ -1,53 +1,59 @@
+import {getIndividualWorks} from "./individual-works/works";
+import {getControlWorks} from "./control-works/works";
+
 const getFromStorage = (key) => JSON.parse(localStorage.getItem(key)) || [];
 const saveToStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
 
 const individualWorkStats = "individualWorkStats";
 const controlWorkStats = "controlWorkStats";
 
-export function getIndividualWorkScore(id) {
-    const stats = getFromStorage(individualWorkStats);
-    return stats.find((item) => item.id === id) || null;
-}
-
 export function getIndividualWorksScore() {
-    return getFromStorage(individualWorkStats);
+    let scores = getFromStorage(individualWorkStats);
+    if (scores.length === 0)
+    {
+        let works = getIndividualWorks();
+        return works.map(work => ({ id: work.id, theme: work.theme, lastScore: 0, maxScore: 0 }));
+    }
+
+    return scores;
 }
 
-export function getControlWorkScore(id) {
-    const stats = getFromStorage(controlWorkStats);
+export function getIndividualWorkScoreById(id) {
+    const stats = getIndividualWorksScore();
     return stats.find((item) => item.id === id) || null;
 }
 
 export function getControlWorksScore() {
-    return getFromStorage(controlWorkStats);
+    let scores = getFromStorage(controlWorkStats);
+    if (scores.length === 0)
+    {
+        let works = getControlWorks();
+        return works.map(work => ({ id: work.id, theme: work.theme, lastScore: 0, maxScore: 0 }));
+    }
+
+    return scores;
+}
+
+export function getControlWorkScoreById(id) {
+    const stats = getControlWorksScore();
+    return stats.find((item) => item.id === id) || null;
 }
 
 export function setIndividualWorkScore(id, score) {
-    const stats = getFromStorage(individualWorkStats);
-    const index = stats.findIndex((item) => item.id === id);
-
-    if (index !== -1) {
-        // Обновление существующей записи
-        stats[index].lastScore = score;
-        stats[index].maxScore = Math.max(stats[index].maxScore, score);
-    } else {
-        // Создание новой записи
-        stats.push({ id, lastScore: score, maxScore: score });
-    }
+    const stats = getIndividualWorksScore();
+    let stat = stats.find((item) => item.id == id);
+    stat.lastScore = score;
+    stat.maxScore = Math.max(stat.maxScore, score);
 
     saveToStorage(individualWorkStats, stats);
 }
 
 export function setControlWorkScore(id, score) {
-    const stats = getFromStorage(controlWorkStats);
-    const index = stats.findIndex((item) => item.id === id);
+    const stats = getControlWorksScore();
 
-    if (index !== -1) {
-        stats[index].lastScore = score;
-        stats[index].maxScore = Math.max(stats[index].maxScore, score);
-    } else {
-        stats.push({ id, lastScore: score, maxScore: score });
-    }
+    let stat = stats.find((item) => item.id == id);
+    stat.lastScore = score;
+    stat.maxScore = Math.max(stat.maxScore, score);
 
     saveToStorage(controlWorkStats, stats);
 }
