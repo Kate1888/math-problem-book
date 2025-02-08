@@ -6,6 +6,7 @@ import ControlWorkTheory from "./pages/control-work-theory/control-work-theory";
 import ControlWorkTest from './pages/control-work-test/control-work-test';
 import TopicsPage from "./pages/topics/topics";
 import {Provider} from "./components/ui/provider"
+import ProfilePage from "./pages/profile/profile";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                         <Route path="/individual-work/:id/test" element={<IndividualWorkTest/>}/>
                         <Route path="/control-work/:id" element={<ControlWorkTheory/>}/>
                         <Route path="/control-work/:id/test" element={<ControlWorkTest/>}/>
+                        <Route path="/profile" element={<ProfilePage/>}/>
                     </Routes>
                 </Router>
             </Provider>

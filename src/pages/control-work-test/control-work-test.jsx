@@ -13,6 +13,7 @@ import {
 import Layout from "../shared-components/layout/layout";
 import {getControlWork} from "../../data/control-works/works";
 import getControlWorkQuestions from "../../data/control-works/questions";
+import {setControlWorkScore} from "../../data/scoreStorage";
 
 const ControlWorkTest = () => {
     const params = useParams();
@@ -46,6 +47,10 @@ const ControlWorkTest = () => {
                 userAnswerIndex !== undefined && question.answers[userAnswerIndex].isRight;
             return count + (isCorrect ? 1 : 0);
         }, 0);
+
+        let percentScore = correctAnswersCount / questions.length;
+        let roundedScore = Math.round(percentScore * 100) / 100;
+        setControlWorkScore(workNumber, roundedScore);
 
         setResult({
             correct: correctAnswersCount,
