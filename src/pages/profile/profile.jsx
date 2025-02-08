@@ -1,7 +1,7 @@
-import { Box, Text, VStack } from "@chakra-ui/react";
+import { Box, Text, VStack, Heading } from "@chakra-ui/react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import Layout from "../shared-components/layout/layout";
-import {getControlWorksScore, getIndividualWorksScore} from "../../data/scoreStorage";
+import { getControlWorksScore, getIndividualWorksScore } from "../../data/scoreStorage";
 
 const ProfilePage = () => {
     const individualWorkStats = getIndividualWorksScore();
@@ -9,10 +9,18 @@ const ProfilePage = () => {
 
     return (
         <Layout>
-            <VStack spacing={8} align="stretch">
-                <Box>
-                    <Text fontSize="2xl" fontWeight="bold" mb={4}>
-                        Статистика по самостоятельным работам
+            <Box maxW="800px" mx="auto" textAlign="center" mb={8}>
+                <Heading as="h1" size="xl" mb={2}>Профиль пользователя</Heading>
+                <Text fontSize="lg" color="gray.600">
+                    Здесь отображается ваша статистика по самостоятельным и контрольным работам.
+                    Вы можете увидеть, как менялись ваши результаты, и следить за прогрессом.
+                </Text>
+            </Box>
+
+            <VStack spacing={10} align="stretch">
+                <Box p={6} shadow="md" borderRadius="lg" bg="white">
+                    <Text fontSize="2xl" fontWeight="bold" mb={4} textAlign="center">
+                        📊 Статистика по самостоятельным работам
                     </Text>
                     {individualWorkStats.length > 0 ? (
                         <ResponsiveContainer width="100%" height={300}>
@@ -27,13 +35,13 @@ const ProfilePage = () => {
                             </LineChart>
                         </ResponsiveContainer>
                     ) : (
-                        <Text>Нет данных по самостоятельным работам</Text>
+                        <Text textAlign="center" color="gray.500">Нет данных по самостоятельным работам.</Text>
                     )}
                 </Box>
 
-                <Box>
-                    <Text fontSize="2xl" fontWeight="bold" mb={4}>
-                        Статистика по контрольным работам
+                <Box p={6} shadow="md" borderRadius="lg" bg="white">
+                    <Text fontSize="2xl" fontWeight="bold" mb={4} textAlign="center">
+                        📈 Статистика по контрольным работам
                     </Text>
                     {controlWorkStats.length > 0 ? (
                         <ResponsiveContainer width="100%" height={300}>
@@ -48,7 +56,7 @@ const ProfilePage = () => {
                             </LineChart>
                         </ResponsiveContainer>
                     ) : (
-                        <Text>Нет данных по контрольным работам</Text>
+                        <Text textAlign="center" color="gray.500">Нет данных по контрольным работам.</Text>
                     )}
                 </Box>
             </VStack>
