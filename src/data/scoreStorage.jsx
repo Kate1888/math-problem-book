@@ -3,6 +3,7 @@ import {getControlWorks} from "./control-works/works";
 
 const getFromStorage = (key) => JSON.parse(localStorage.getItem(key)) || [];
 const saveToStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
+const clearStorage = () => localStorage.clear();
 
 const individualWorkStats = "individualWorkStats";
 const controlWorkStats = "controlWorkStats";
@@ -56,4 +57,8 @@ export function setControlWorkScore(id, score) {
     stat.maxScore = Math.max(stat.maxScore, score);
 
     saveToStorage(controlWorkStats, stats);
+}
+
+export function clearAllScores() {
+    clearStorage();
 }

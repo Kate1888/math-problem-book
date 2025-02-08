@@ -1,7 +1,9 @@
 import { Box, Text, VStack, Heading } from "@chakra-ui/react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import Layout from "../shared-components/layout/layout";
-import { getControlWorksScore, getIndividualWorksScore } from "../../data/scoreStorage";
+import { getControlWorksScore, getIndividualWorksScore, clearAllScores } from "../../data/scoreStorage";
+import {useState} from "react";
+import {Button} from "../../components/ui/button";
 
 const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
@@ -18,8 +20,14 @@ const CustomTooltip = ({ active, payload }) => {
 };
 
 const ProfilePage = () => {
-    const individualWorkStats = getIndividualWorksScore();
-    const controlWorkStats = getControlWorksScore();
+    const [individualWorkStats, setIndividualWorkStats] = useState(getIndividualWorksScore());
+    const [controlWorkStats, setControlWorkStats] = useState(getControlWorksScore());
+
+    const handleReset = () => {
+        clearAllScores();
+        setIndividualWorkStats([]);
+        setControlWorkStats([]);
+    };
 
     return (
         <Layout>
@@ -29,6 +37,7 @@ const ProfilePage = () => {
                     Здесь отображается ваша статистика по самостоятельным и контрольным работам.
                     Наведите курсор на точки графиков, чтобы увидеть тему работы и ваши баллы.
                 </Text>
+                <Button colorScheme="red" onClick={handleReset}>Сбросить статистику</Button>
             </Box>
 
             <VStack spacing={10} align="stretch">
