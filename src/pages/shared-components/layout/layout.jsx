@@ -1,5 +1,6 @@
-import { Box, Flex, HStack, Button, Link, Container, Text } from "@chakra-ui/react";
-import {Link as RouterLink} from "react-router-dom";
+import { Box, Flex, HStack, Button, Link, Container, Text, IconButton } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
+import { LuUser } from "react-icons/lu";
 
 const Layout = ({ children, theoryButton, testButton }) => {
     return (
@@ -36,6 +37,17 @@ const Layout = ({ children, theoryButton, testButton }) => {
                             </Link>
                         )}
                     </HStack>
+
+                    {/* Кнопка профиля */}
+                    <Link as={RouterLink} to="/profile" _hover={{ textDecoration: "none" }}>
+                        <IconButton
+                            aria-label="Профиль"
+                            variant="ghost"
+                            colorScheme="blue"
+                            size="lg">
+                            <LuUser size="lg" />
+                        </IconButton>
+                    </Link>
                 </Flex>
             </Box>
 

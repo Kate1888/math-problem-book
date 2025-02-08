@@ -6,6 +6,7 @@ import getIndividualWorkQuestions from "../../data/individual-works/questions";
 import {getIndividualWorkByNumber} from "../../data/individual-works/works";
 import {TestQuestion} from "./test-question";
 import {TestResult} from "./test-result";
+import {setIndividualWorkScore} from "../../data/scoreStorage";
 
 const IndividualWorkTest = () => {
     const params = useParams();
@@ -14,7 +15,7 @@ const IndividualWorkTest = () => {
     const workData = getIndividualWorkByNumber(workNumber);
 
     const [currentQuestionNumber, setCurrentQuestionNumber] = useState(0);
-    const [score, setScore] = useState(0);
+    let [score, setScore] = useState(0);
     const [isFinished, setIsFinished] = useState(false);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
 
@@ -39,7 +40,8 @@ const IndividualWorkTest = () => {
         if (!selectedAnswer) return;
 
         if (selectedAnswer.isRight) {
-            setScore(score + 1);
+            score += 1;
+            setScore(score);
         }
 
         if (currentQuestionNumber + 1 < workQuestions.length) {
@@ -47,6 +49,9 @@ const IndividualWorkTest = () => {
             setSelectedAnswer(null); // Сброс выбранного ответа
         } else {
             setIsFinished(true);
+            let percentScore = score / workQuestions.length;
+            let roundedScore = Math.round(percentScore * 100) / 100;
+            setIndividualWorkScore(workNumber, roundedScore);
         }
     };
 
