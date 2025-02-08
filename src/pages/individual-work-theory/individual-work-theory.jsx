@@ -15,9 +15,6 @@ function IndividualWorkTheory() {
     return (
         <Layout testButton={testButton}>
             <VStack align="start" spacing={6} p={6}>
-                {/* Заголовок */}
-                <Heading size="xl">{workData.theme}</Heading>
-
                 {/* Картинка */}
                 <Box>
                     <Image

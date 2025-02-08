@@ -33,13 +33,13 @@ const ProfilePage = () => {
         <Layout>
             <Box maxW="800px" mx="auto" textAlign="center" mb={8}>
                 <Heading as="h1" size="xl" mb={2}>Профиль пользователя</Heading>
-                <Text fontSize="lg" color="gray.600">
+                <Text fontSize="lg" color="gray.600" mb={4}>
                     Здесь отображается ваша статистика по самостоятельным и контрольным работам.
                     Наведите курсор на точки графиков, чтобы увидеть тему работы и ваши баллы.
                 </Text>
                 <Button colorScheme="red" onClick={handleReset}>Сбросить статистику</Button>
             </Box>
-
+            
             <VStack spacing={10} align="stretch">
                 {/* График по самостоятельным работам */}
                 <Box p={6} shadow="md" borderRadius="lg" bg="white">
