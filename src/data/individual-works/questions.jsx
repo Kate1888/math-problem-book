@@ -596,7 +596,7 @@ export default function getIndividualWorkQuestions(workNumber) {
                         isRight: false,
                     },
                     {
-                        text: '101',
+                        text: '106',
                         isRight: true,
                     }
                 ],
