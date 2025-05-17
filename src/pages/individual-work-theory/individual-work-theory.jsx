@@ -6,16 +6,27 @@ import { getIndividualWorkByNumber } from "../../data/individual-works/works";
 
 function IndividualWorkTheory() {
     let params = useParams();
-    let workData = getIndividualWorkByNumber(params.id);
+    let workData = getIndividualWorkByNumber(params?.id);
 
     const testButton = {
-        link: `/individual-work/${workData.id}/test`
+        link: `/individual-work/${workData?.id}/test`
     };
+
+    // Проверка наличия вопросов, если нет то выводим заглушку с текстом "Вопросы не найдены"
+    if (!workData) {
+        return (
+            <Layout>
+                <Box mt={6} p={4} borderWidth={1} borderRadius="md" bg="red.100">
+                    <Text>Теория не найдена для работы {params?.id}</Text>
+                </Box>
+            </Layout>
+        );
+    }
 
     return (
         <Layout testButton={testButton}>
             <VStack align="start" spacing={6} p={6} w="100%">
-                {/* Выделенный блок с текстом */}
+                {/* Пояснительный текст с теорией */}
                 <Alert.Root status="info" borderRadius="md" fontSize="lg">
                     <Alert.Indicator  />
                     <Text>
@@ -24,7 +35,7 @@ function IndividualWorkTheory() {
                     </Text>
                 </Alert.Root>
 
-                {/* Картинка, центрированная по горизонтали */}
+                {/* Картинка с теорией */}
                 <Flex justify="center" w="100%">
                     <Image
                         src={workData.theoryImage}

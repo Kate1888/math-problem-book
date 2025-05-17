@@ -2,6 +2,7 @@ import {Box, Button, Heading, Text} from "@chakra-ui/react";
 import React from "react";
 
 export const TestResult = ({score, total, onRetry}) => {
+    
     return (
         <Box
             textAlign="center"
