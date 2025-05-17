@@ -26,6 +26,8 @@ const IndividualWorkTest = () => {
     const [isFinished, setIsFinished] = useState(false);
     //Выбраный вариант ответа (закрашивание точки ответа)
     const [selectedAnswer, setSelectedAnswer] = useState(null);
+    //Текущий вопрос
+    const currentQuestion = workQuestions[currentQuestionNumber];
 
     //Ссылка на теорию для кнопки "Теория" в шапке
     const theoryButton = {
@@ -42,8 +44,6 @@ const IndividualWorkTest = () => {
             </Layout>
         );
     }
-
-    const currentQuestion = workQuestions[currentQuestionNumber];
 
     //Обработчик кнопки "Следующий вопрос"
     const handleNextQuestion = () => {
