@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {useParams} from "react-router-dom";
 import {Box, Heading, Text, VStack,} from "@chakra-ui/react";
-import Layout from "../shared-components/layout/layout"; // Подключаем Layout
+import Layout from "../shared-components/layout/layout";
 import getIndividualWorkQuestions from "../../data/individual-works/questions";
 import {getIndividualWorkByNumber} from "../../data/individual-works/works";
 import {TestQuestion} from "./test-question";
@@ -9,21 +9,32 @@ import {TestResult} from "./test-result";
 import {setIndividualWorkScore} from "../../data/scoreStorage";
 
 const IndividualWorkTest = () => {
+    //Берем номер самостоятельной работы из адресной строки
     const params = useParams();
-    const workNumber = params.id;
+    const workNumber = params?.id;
+
+    //Загружаем самостоятельную работу и вопросы по ней из нашего "хранилища данных" (файла)
     const workQuestions = getIndividualWorkQuestions(workNumber);
-    const workData = getIndividualWorkByNumber(workNumber);
+    const workTheory = getIndividualWorkByNumber(workNumber);
 
+    //Задаем начальные состояния для переменных
+    //Текущий номер вопроса
     const [currentQuestionNumber, setCurrentQuestionNumber] = useState(0);
+    //Количество правильных ответов
     let [score, setScore] = useState(0);
+    //Признак, закончено ли выполнение работы
     const [isFinished, setIsFinished] = useState(false);
+    //Выбраный вариант ответа (закрашивание точки ответа)
     const [selectedAnswer, setSelectedAnswer] = useState(null);
+    //Текущий вопрос
+    const currentQuestion = workQuestions[currentQuestionNumber];
 
+    //Ссылка на теорию для кнопки "Теория" в шапке
     const theoryButton = {
-        link: `/individual-work/${workData.id}`,
+        link: `/individual-work/${workTheory?.id}`,
     };
 
-    // Проверка наличия вопросов
+    // Проверка наличия вопросов, если нет то выводим заглушку с текстом "Вопросы не найдены"
     if (!workQuestions || workQuestions.length === 0) {
         return (
             <Layout theoryButton={theoryButton}>
@@ -34,10 +45,10 @@ const IndividualWorkTest = () => {
         );
     }
 
-    const currentQuestion = workQuestions[currentQuestionNumber];
-
+    //Обработчик кнопки "Следующий вопрос"
     const handleNextQuestion = () => {
-        if (!selectedAnswer) return;
+        if (!selectedAnswer) 
+            return;
 
         if (selectedAnswer.isRight) {
             score += 1;
@@ -55,6 +66,7 @@ const IndividualWorkTest = () => {
         }
     };
 
+    //Обработчик кнопки "Пройти снова"
     const handleRetry = () => {
         setCurrentQuestionNumber(0);
         setScore(0);
@@ -65,12 +77,13 @@ const IndividualWorkTest = () => {
     return (
         <Layout theoryButton={theoryButton}>
             <VStack align="start" spacing={6} p={6}>
-                {/* Заголовок теста */}
+                {/* Заголовок с темой самостоятельной работы */}
                 <Heading size="lg" textAlign="center" w="full">
-                    {workData?.theme || "Самостоятельная работа"}
+                    {workTheory?.theme || "Самостоятельная работа"}
                 </Heading>
 
-                {/* Основной контент */}
+                {/* Основной контент, если вопросы кончились - загружаем компонент с результатами теста "TestResult", 
+                если нет - загружаем компонент вопроса "TestQuestion"*/}
                 {!isFinished ? (
                     <TestQuestion
                         currentQuestion={currentQuestion}

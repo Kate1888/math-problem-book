@@ -1,12 +1,12 @@
 import {Box, Button, Heading, Text, VStack, Container, Link} from "@chakra-ui/react";
 import Layout from "../shared-components/layout/layout";
-import {Link as RouterLink} from "react-router-dom"; // Предположим, что Layout у нас уже есть
+import {Link as RouterLink} from "react-router-dom";
 
 const LandingPage = () => {
 	return (
 		<Layout>
 			<Box>
-				{/* Hero Section */}
+				{/* Ознакомительный текст */}
 				<Box py={20} textAlign="center">
 					<Heading size="2xl" mb={4}>Добро пожаловать в платформу для подготовки и тестирования!</Heading>
 					<Text fontSize="lg" mb={6}>
@@ -44,7 +44,7 @@ const LandingPage = () => {
 					</Container>
 				</Box>
 
-				{/* Призыв к действию */}
+				{/* Призыв к прохождение самостоятельных и контрольных работ */}
 				<Box py={20} textAlign="center">
 					<Heading size="lg" mb={4}>Готовы начать?</Heading>
 					<Text fontSize="xl" mb={6}>

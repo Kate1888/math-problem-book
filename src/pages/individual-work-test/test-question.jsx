@@ -9,6 +9,7 @@ export const TestQuestion = ({
                                  isLastQuestion,
                              }) => {
     let questionHtml = `${currentQuestion.order}. ${currentQuestion.text}`;
+
     return (
         <Box w="full">
             {/* Текущий вопрос */}
@@ -28,10 +29,10 @@ export const TestQuestion = ({
                 )}
             </VStack>
 
-            {/* Разделение вопроса и ответов */}
+            {/* Разделение зон вопроса и ответов */}
             <Box borderBottom="1px solid" borderColor="gray.300" mb={4}/>
 
-            {/* Ответы */}
+            {/* Варианты ответов */}
             <Stack spacing={4} w="full">
                 {currentQuestion.answers.map((answer, index) => (
                     <HStack
